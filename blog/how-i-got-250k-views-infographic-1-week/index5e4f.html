@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/?replytocom=73857 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:09:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>How I got 250k+ views on my infographic in 1 week - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="index.html" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@launchbit"/>
+<meta name="twitter:domain" content="LaunchBit"/>
+<meta name="twitter:creator" content="@launchbit"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/ZuvPTfhEZQGn52vNYdtu5kS_-XJAoxFp2m4gXeRnHsPYPrJYY8lPgWm6MXSTeWUWKmGdFutrNtQfm6gj68N1oqZHYK7la05ycEHVcM1pgjZKYJ5ShtmYUeILcaCVWr_w6Q"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2014/07/Screen-Shot-2014-07-03-at-6.38.31-AM-700x480.png"/>
+<meta name="twitter:image:src" content="https://lh4.googleusercontent.com/YiTVU9zPOWZIvKWQSwpA_SmNtaBqLvDu7BLNduEVKvzYsPlYNlzcosYErA6TE8BL3BczpDSMxIQp4O1JFi9_KW_2uxEtHimUbh-ojKyXbjSFkdnkYOMWNKWBhjru1nu07g"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/1Imhq27aQ5JsujaVCEDbhLk8ry_lZs7f_XXzZSxLoFVVLazELOAW-8-YDajIskIiCLMJsFXeTSnC7ZQh46GydDLSbs7VcFTsEsdPYXsLX6Zu8ZNkOPRQZLTxvWE_99KDPA"/>
+<meta name="twitter:image:src" content="https://lh4.googleusercontent.com/TnWO5Gl9UUDt-xkHuqoFOlgxTganrSPhnY4E54saIGVEXPit37GVJ5BtpG1mEIJ9tfLaUqNUYLsljNY4awWZPD3kqgJxK9b7c0N-BFi526AZMZnyEdc1fdLoou_H__kuDA"/>
+<meta name="twitter:image:src" content="https://lh6.googleusercontent.com/F75Ic2i_gVGqAhDGW8MtPNCJngh4I7pVkHsn7pPH06IAdlQRhacBvX-HAiiXszn7WIcX05BuWhPnDt3N6qXKILFAa_zKLpEYE8c7nC8ZVoMnVYjVrTt5td_9mUaufCE6Sw"/>
+<meta name="twitter:image:src" content="https://lh4.googleusercontent.com/h8dz8rQTq5hjt0riSG1wbHKbMmG8G3Bjb7vn5XzB2ORd_7HBKvXut20vJl1Havc7c8ZFVoWD3yWZeKWxLNCXQYxQILohFEO0DrDlkRfrjU6nTb3C4dIou_GpfVdeOlNK1A"/>
+<meta name="twitter:image:src" content="https://lh4.googleusercontent.com/o0UwbO1RTyG21CpR4gk4ZsTYp1HxfV_8saEKFjjVh_fdvi_Xm1OHUZE6ndcZgTz3EpvL2WsVwcfTeKtTaxdTvkiK3x1wFDhhbl7yQqGwBT7Z4mn2XmKbvITxKbfh9LwTCQ"/>
+<meta name="twitter:image:src" content="https://lh5.googleusercontent.com/BHiAxP4V0p6qOVIbS1xFd8eDbjgNtL5BQyhUHeTS6t6uU5oEHk5mhf8IV_Y5jWKDf4jJ3RrppnlGxzt0pqUhZIFIa9qrFj5kqw8yxzEx37HM4Odlpff-jmnwEo1eQgrH4A"/>
+<meta name="twitter:image:src" content="https://lh4.googleusercontent.com/MDVH9GjietVM6hLz2FawMmq_Cp0GPlQolKyA5rB30Rc6Eh-XsShDzXMEZuizS9O98VNAHXmOQ_iiKAEE2CXC7dnTo36lZmozCc4_BxJYJhvfjjQom8k_5CAt6zTf80XMHQ"/>
+<meta name="twitter:image:src" content="https://lh5.googleusercontent.com/9kIk9OpeKY66L92jyfo8j5K15xet6P-SmVQRo_zwhfXR1EDAMlxGuHo_7HbK5_RDqHC_c-txTz1TDcbTG245UQJCeyqfF7mduLndQ6WPWSO6qpQ5zxrA-RWW_8AAOSKCtw"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/Jgm9rznw57Ye-tOgnHed7Mr5UnW10VmHBi8Zr1jBGNIAg3O06AL3E62KS0OCBXjpm1BX0sMDvZHoE0F0AuxMoY9IzvcS-Fh61FZiGWMauG2lnaF6Y1YQB1cl8vS6H5UjXQ"/>
+<meta name="twitter:image:src" content="https://lh5.googleusercontent.com/BJYlYt6NmfQipKts_M_DQKpLusWTdEqjqtTsnQ56A658_9hNCOGKLPEKdJyRmZKga4qLkJI2zyYjy0k8PO0M9gFBMGltqE6jEBQ3P6k2D5irwXmkjahaacpazhIJ9wOaCw"/>
+<meta name="twitter:image:src" content="https://lh5.googleusercontent.com/fAF4y2ZeGSN4tq6WBfz15-uWJsKu3BZNDeiZjC8-oH7StzxQMr6qFuSztQ2VNENvIG1fKh8MwKICYY2l0AWMk8Fsipe8LjsJSrewQBe4BxAlwiNnfLo09-aCHyumx5HZGA"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/9uMmUe23hRl6iExcsb8XgSRkABhRfz8TGgBODS9I49KK-TwlIWBvGzwT6Jrb9gdgyI0Yo-5ybYCgAfpka6AAhMvPapEX4f-YHk55H0_TsxPYvArUvFQctpgAaxawpvI4Sw"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/1qOhhSDdciBdhB8V4zC5_pdjkJJhFnQIVRoMEfvLU1bk1-TaouEXx_WQm7cDNrOwdvIlDrDdAmZ8EZMFKyKFFYxFUwLHIc4GBV9gG_WfwISDsEBUOxEBpcfUUyptW07wuQ"/>
+<meta name="twitter:image:src" content="https://lh5.googleusercontent.com/ol5l6t5nE7pnerEZth3qAJLZNDT02bAs58UtgMTkywnGIciCcZljhL85raE3ceqOrAn0u6T9TTzeWM27qoKEkCiHNLp1vf-rx4MMalUrBDjZI66fpE8fLd7pAbatYw7vZg"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/sVEr5CCmqRnmsczlB5m3QsND1s_on_a3Kt9Pc1VWyqciAKiOmTMs6ImyeMx8QuH8WRrnpgMhP8onl2MV4NVwyhgvhAnL29oCnUYoQCW7S28kaQdt7LL7aHjs5FXe-58QLQ"/>
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/2XpvesmNIT7dahlUtrYse4ZU8Nf8q5hkxf2luWW5xMDvH--vnsMv0NvLaOA1Ng_1VYr-XKh8uPLndzOXarDPceL7L96snjfENnISZqGpI949cyxSdzd-Yu-VTEP-pjKOkQ"/>
+<meta name="twitter:description" content="
+&nbsp;
+By Sam Parr, organizer of Hustle Con
+The Myth of Going Viral
+In the summer of 2013, my team and I created a roommate-finding app appropriately named Roommates. In a nutshell, it was just like Tinder&#8230;but for roommates. After our team had built an amazingly awesome app, we needed users! To find users we ended up creating a series of infographics that were seen by hundreds of thousands of people and featured in Techcrunch, Huffington Post, Curbed SF, Venture Beat, The Next Web, The New York Observer, and dozens of other media outlets.  Our infographic for San Francisco, for example, well exceeded 250k views in less than one week.&hellip; Read the rest"/>
+<meta name="twitter:title" content="How I got 250k+ views on my infographic in 1 week - LaunchBit"/>
+<meta name="twitter:url" content="http://www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; How I got 250k+ views on my infographic in 1 week Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply5589.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='../index0c04.html?p=6195' />
+      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+		<meta property="og:title" content="How I got 250k+ views on my infographic in 1 week"/>
+		<meta property="og:description" content="
+&nbsp;
+By Sam Parr, organizer of Hustle Con
+The Myth of Going Viral
+In the summer of 2013, my team and I created a roommate-finding app appropriately named Roommates. In a nutshell, it was just like Tinder&#8230;but for roommates. After our team had built an amazingly awesome app, we needed users! To find users we ended up creating a series of infographics that were seen by hundreds of thousands of people and featured in Techcrunch, Huffington Post, Curbed SF, Venture Beat, The Next Web, The New York Observer, and dozens of other media outlets.  Our infographic for San Francisco, for example, well exceeded 250k views in less than one week.&hellip; Read the rest" />
+		<meta property="og:url" content="http://www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/"/>
+						<meta property="og:type" content="article"
+		/>
+		<meta property="og:site_name" content="LaunchBit"/>
+		<!-- End Open Graph Meta Tags !-->
+
+    <script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="single single-post postid-6195 single-format-standard custom-background how-i-got-250k-views-infographic-1-week">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+	
+		<div class="main">
+
+			<!-- Article -->
+			<article id="post-6195" class="post-6195 post type-post status-publish format-standard hentry category-uncategorized post_content">
+
+				<div class="inner">
+
+					<nav><ul class="breadcrumb"><li><a href="../../blog.html">Home</a> <span class="divider">/</span> </li><li><a href="../category/uncategorized/index.html" title="View all posts in Uncategorized">Uncategorized</a> <span class="divider">/</span> </li><li class="active">How I got 250k+ views on my infographic in 1 week</li></ul></nav>
+					<div class="prefix"></div>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a>
+					</h1>
+					<!-- /Post Title -->
+
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by">Published by <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></li>
+						<li class="comments"><a href="index.html#comments" title="Comment on How I got 250k+ views on my infographic in 1 week">8 Comments</a></li>
+					</ul>
+					<!-- /Post Details -->
+<!--
+<script type="text/javascript" src="http://www.launchbit.com/js-az/launchbit.js"></script><div class="launchbitaz" launchbit_id="9505"></div> -->
+
+					<a id="dd_start"></a><p><img src="https://lh3.googleusercontent.com/ZuvPTfhEZQGn52vNYdtu5kS_-XJAoxFp2m4gXeRnHsPYPrJYY8lPgWm6MXSTeWUWKmGdFutrNtQfm6gj68N1oqZHYK7la05ycEHVcM1pgjZKYJ5ShtmYUeILcaCVWr_w6Q" alt="" width="540px;" height="299px;" /></p>
+<p>&nbsp;</p>
+<p>By Sam Parr, organizer of <a href="http://www.hustlecon.com/">Hustle Con</a></p>
+<p><strong>The Myth of Going Viral</strong></p>
+<p>In the summer of 2013, my team and I created a roommate-finding app appropriately named Roommates. In a nutshell, it was just like Tinder&#8230;but for roommates. After our team had built an amazingly awesome app, we needed users! To find users we ended up creating a series of infographics that were seen by hundreds of thousands of people and featured in Techcrunch, Huffington Post, Curbed SF, Venture Beat, The Next Web, The New York Observer, and dozens of other media outlets.  Our infographic for San Francisco, for example, well exceeded 250k views in less than one week.</p>
+<p><strong>The Myth &#8211; Dude, let’s just go viral!</strong></p>
+<p style="text-align: center;"><a href="../wp-content/uploads/2014/07/Screen-Shot-2014-07-03-at-6.38.31-AM.png"><img class="aligncenter  wp-image-6198" title="Going viral" src="../wp-content/uploads/2014/07/Screen-Shot-2014-07-03-at-6.38.31-AM-700x480.png" alt="" width="490" height="336" /></a></p>
+<p>It couldn&#8217;t be THAT hard right? I mean, all we had to do was create any ole&#8217; thing, post it to Twitter/Facebook, and watch the users flock to us like startup nerds to a Noah Kagan blog post.</p>
+<p><em>After years of experience, I&#8217;ve found that this is anything but reality.</em></p>
+<p>But after creating a ton of infographics that have been shared tens of thousands of times and have been seen by hundreds of thousands of people, I’ve learned that there are three steps to increase your chances of creating a viral infographic.</p>
+<p>These steps are:</p>
+<ul>
+<li>Define your goal and target audience</li>
+<li>Create irresistible and sticky content</li>
+<li>Distribute so you create an avalanche</li>
+</ul>
+<p>Lets dig into each step.</p>
+<p><strong>Step 1. Define your goal and target audience</strong></p>
+<p>When creating an infographic it&#8217;s important to first ask yourself “Who&#8217;s this for and why am I doing this?”</p>
+<p>I know, I know, it sounds silly but 90% of people completely forget this first step. It&#8217;s easy to fall into the vanity trap of chasing traffic for traffic’s sake, but to go viral and make it a success you need to have a “how” AND a “why.”</p>
+<p>Ultimately what you need to realize is that the goal is always a share, but beyond that it needs to be a sale, email conversion, or PR.</p>
+<p>Check out <a href="http://www.upworthy.com/">Upworthy</a> &#8212; the king of going viral. It&#8217;s pretty clear what they want &#8211; your dam* email address, and who they want it from – liberal leaning hip young folks who like Seth Rogen.</p>
+<p>Whatever you do, make sure you have a “why” before creating your content. But whether it’s a sale or email, make sure to never be tacky or to “self-promotey”.</p>
+<p><span style="text-decoration: underline;">How we applied this to Roommates</span><br />
+Before creating content we knew our target was 18 – 30 year olds who living in San Francisco, Chicago, Boston, Los Angeles, and New York. The goal was to covered by a large media outlet like Huffington Post or Techcrunch and to get downloads. The easy part was that our product &#8211; an app &#8211; was free.</p>
+<p>Did it work? Yes.</p>
+<p><em>Remember: Write down your goals and target audience before doing any type of content creation.</em></p>
+<p><strong>Step 2. Create sticky content</strong><br />
+What the hell does that even mean? I read a lot of blogs and there&#8217;s one thing SEO specialists and marketers constantly say: create good, shareable content.</p>
+<p>I HATE when I see that advice.</p>
+<p>It&#8217;s so bland. It&#8217;s like saying “be fast and strong” when someone asks how to run a 4 minute mile. Yeah, thanks a lot&#8230;GREAT advice.</p>
+<p>So here’s the deal: humans are fairly predictable creatures. If you&#8217;ve read <em>Made To Stick</em> or <em>Contagious</em> then you know there&#8217;s a science to creating sticking content. And I&#8217;ve broken it down into four categories:</p>
+<ul>
+<li>Niches make riches</li>
+<li>That&#8217;s SO me</li>
+<li>Names, names, names</li>
+<li>Be controversial, funny, or useful</li>
+</ul>
+<p><span style="text-decoration: underline;">1. Niches make riches (if it rhymes it makes sense&#8230;no matter what)</span><br />
+When creating content, it&#8217;s easy to try and appeal to everyone, but that mindset will only guarantee failure. In fact, you should do the exact opposite, which means create something that only a small, passionate group of care about rather than appealing to a large, apathetic group.</p>
+<p>For example, take a look at the top posts from from the subreddit r/programming. If you&#8217;re not a programmer chances are that not a single one of these article titles will make sense to you.</p>
+<p><img src="https://lh4.googleusercontent.com/YiTVU9zPOWZIvKWQSwpA_SmNtaBqLvDu7BLNduEVKvzYsPlYNlzcosYErA6TE8BL3BczpDSMxIQp4O1JFi9_KW_2uxEtHimUbh-ojKyXbjSFkdnkYOMWNKWBhjru1nu07g" alt="" width="624px;" height="412px;" /></p>
+<p>But check out how many times the 2nd most popular article has been shared.</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/1Imhq27aQ5JsujaVCEDbhLk8ry_lZs7f_XXzZSxLoFVVLazELOAW-8-YDajIskIiCLMJsFXeTSnC7ZQh46GydDLSbs7VcFTsEsdPYXsLX6Zu8ZNkOPRQZLTxvWE_99KDPA" alt="" width="624px;" height="236px;" /></p>
+<p dir="ltr"><strong>408 times!</strong></p>
+<p>Sure, the article doesn’t  mean much to YOU, but it does resonate with a small, passionate group of people – programmers.</p>
+<p><span style="text-decoration: underline;">How we applied this to Roommates</span></p>
+<p dir="ltr">If you don’t live in San Francisco then the San Francisco article will be pointless to you. In fact, even if you live in SF a lot of the jokes won’t make sense. To really understand each joke you need to live in the neighborhood we made fun of.</p>
+<p dir="ltr"><img src="https://lh4.googleusercontent.com/TnWO5Gl9UUDt-xkHuqoFOlgxTganrSPhnY4E54saIGVEXPit37GVJ5BtpG1mEIJ9tfLaUqNUYLsljNY4awWZPD3kqgJxK9b7c0N-BFi526AZMZnyEdc1fdLoou_H__kuDA" alt="" width="435px;" height="383px;" /></p>
+<p dir="ltr">You won’t get this joke&#8230;unless you’ve lived in The Marina neighborhood in SF.  <strong>Remember: If you try to appeal to everyone you&#8217;ll appeal to no one at all. Create content that&#8217;s insightful or funny for a very small, passionate group of people, not a huge, apathetic group.</strong></p>
+<p><span style="text-decoration: underline;">2. That&#8217;s SO me!</span></p>
+<p dir="ltr">Similar to the Niches Make Riches theory, when writing sticky content you want readers to identify with your content to the point where they say “Wow, this is so me!” or “I know someone JUST like this.”</p>
+<p dir="ltr"><img src="https://lh6.googleusercontent.com/F75Ic2i_gVGqAhDGW8MtPNCJngh4I7pVkHsn7pPH06IAdlQRhacBvX-HAiiXszn7WIcX05BuWhPnDt3N6qXKILFAa_zKLpEYE8c7nC8ZVoMnVYjVrTt5td_9mUaufCE6Sw" alt="" width="624px;" height="415px;" /></p>
+<p>People want to share something that represents themselves or their friends in a funny/cool way. It&#8217;s not rocket science. It feels good to laugh at yourself. Just look at just about any Buzzfeed quiz. Title’s like “What Friend’s character are you” or “10 ways you know you’re from Boston.” People feel special when they see something that represents themselves online&#8230;and they’ll wanna share it!</p>
+<p dir="ltr"><span style="text-decoration: underline;">How we applied this to Roommates</span></p>
+<p dir="ltr">We created stereotypes for each neighborhood in San Francisco and predicted where they worked. Because we picked such popular employers, it was inevitable that many people who lived in that neighborhood also worked at the employer.</p>
+<p dir="ltr"><img src="https://lh4.googleusercontent.com/h8dz8rQTq5hjt0riSG1wbHKbMmG8G3Bjb7vn5XzB2ORd_7HBKvXut20vJl1Havc7c8ZFVoWD3yWZeKWxLNCXQYxQILohFEO0DrDlkRfrjU6nTb3C4dIou_GpfVdeOlNK1A" alt="" width="624px;" height="227px;" /></p>
+<p dir="ltr"><span style="text-decoration: underline;">3. Names, Names, Names</span></p>
+<p dir="ltr">Hoover Adams was the founder of <em>The Daily Dunn</em>, the local newspaper in Dunn, North Carolina. It&#8217;s one of the most successful newspapers in the country – on average, every household buys 1.12 copies (apparently couples don&#8217;t know how to share). When asked what his secret was, Adams said he&#8217;d had the same strategy for 40 years. It boiled down to three things: names, names, names.</p>
+<p dir="ltr">What people wanted, Adams discovered, was to see their name and their friend&#8217;s names in the paper. “If I could” Adams once said, “I&#8217;d publish pages from the phone book.”</p>
+<p dir="ltr"><img src="https://lh4.googleusercontent.com/o0UwbO1RTyG21CpR4gk4ZsTYp1HxfV_8saEKFjjVh_fdvi_Xm1OHUZE6ndcZgTz3EpvL2WsVwcfTeKtTaxdTvkiK3x1wFDhhbl7yQqGwBT7Z4mn2XmKbvITxKbfh9LwTCQ" alt="" width="381px;" height="285px;" /></p>
+<p dir="ltr">Hoover Adams</p>
+<p> A person&#8217;s name is the most beautiful sound in the world. Not only do people LOVE reading about themselves, they also love reading about the people/things they know and identify with. This concept is perhaps the most powerful on this list because the people you mention in your content will almost always share the content with their followers. I like to call these people “stakeholders.”</p>
+<p dir="ltr"><span style="text-decoration: underline;">How we applied this to Roommates</span></p>
+<p dir="ltr">We made sure to always specifically name employers, restaurants and people, because not only did they share the content, but their fans did as well.</p>
+<p dir="ltr"><img src="https://lh5.googleusercontent.com/BHiAxP4V0p6qOVIbS1xFd8eDbjgNtL5BQyhUHeTS6t6uU5oEHk5mhf8IV_Y5jWKDf4jJ3RrppnlGxzt0pqUhZIFIa9qrFj5kqw8yxzEx37HM4Odlpff-jmnwEo1eQgrH4A" alt="" width="441px;" height="385px;" /></p>
+<p dir="ltr">Examples of how we’d name specific companies</p>
+<p dir="ltr"><img src="https://lh4.googleusercontent.com/MDVH9GjietVM6hLz2FawMmq_Cp0GPlQolKyA5rB30Rc6Eh-XsShDzXMEZuizS9O98VNAHXmOQ_iiKAEE2CXC7dnTo36lZmozCc4_BxJYJhvfjjQom8k_5CAt6zTf80XMHQ" alt="" width="607px;" height="291px;" /></p>
+<p dir="ltr"><span style="text-decoration: underline;">4. Be controversial, funny, interesting, or useful</span></p>
+<p dir="ltr">This is easier said than done and if done incorrectly you can really hurt your brand – so be careful.</p>
+<p dir="ltr">When you provide value, like being funny or useful, people will share your content. For example, if you’ve found this article helpful I hope you’ll share it <img src='../wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />   Check out Neil Patel&#8217;s famous <a href="http://www.quicksprout.com/the-advanced-guide-to-seo/">Advanced SEO Guides</a>. They are crazy helpful and also extremely popular.</p>
+<p dir="ltr">NEVER try to make a homophobic or racist joke. Sure, some people have pulled it off in a funny and tasteful way, but the risk of it failing is too great. And never make your content sad. It&#8217;s been proven that the most shared content is typically happy and uplifting, not depressing.</p>
+<p dir="ltr"><img src="https://lh5.googleusercontent.com/9kIk9OpeKY66L92jyfo8j5K15xet6P-SmVQRo_zwhfXR1EDAMlxGuHo_7HbK5_RDqHC_c-txTz1TDcbTG245UQJCeyqfF7mduLndQ6WPWSO6qpQ5zxrA-RWW_8AAOSKCtw" alt="" width="336px;" height="131px;" />      <img src="https://lh3.googleusercontent.com/Jgm9rznw57Ye-tOgnHed7Mr5UnW10VmHBi8Zr1jBGNIAg3O06AL3E62KS0OCBXjpm1BX0sMDvZHoE0F0AuxMoY9IzvcS-Fh61FZiGWMauG2lnaF6Y1YQB1cl8vS6H5UjXQ" alt="" width="247px;" height="163px;" /></p>
+<p dir="ltr"><strong>Fun tip: Need help brainstorming? Check out these places</strong></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><strong>Yelp</strong>: I&#8217;ve never been to New York, but I helped create a popular infographic about New York neighborhoods. I was able to do this because I read every review for the most popular places on Yelp to understand the culture. Always check out the most popular, highest reviewed, and lowest reviewed places on Yelp and read the comments for ideas.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Reddit</strong>: Gold. There&#8217;s a subreddit for everything. Check out the highest votest threads of the past week, month, or year for ideas.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Top posts from other blogs</strong>: if you have a target audience in mind, check out other blogs they read and find the top posts. Use this as inspiration.</p>
+</li>
+</ul>
+<p dir="ltr"><strong>Step 3. Distribute</strong></p>
+<p dir="ltr">Ok, so now you&#8217;ve got some sticky content. Now what?</p>
+<p dir="ltr">Distribute!</p>
+<p dir="ltr">You&#8217;re not Kevin Costner and this isn&#8217;t Field Of Dreams. One of the biggest misconceptions in content creation is if you create it, people will magically come – but this couldn&#8217;t be further from the truth.</p>
+<p dir="ltr">Going viral is like an avalanche and rarely an accident, once it gets started it builds up and gets bigger and bigger&#8230;but you&#8217;re responsible for the first step.</p>
+<p dir="ltr">Here are my favorite three ways to distribute your sticky content:</p>
+<p dir="ltr"><span style="text-decoration: underline;">1) Reddit/Hacker News/And similar sites</span></p>
+<p dir="ltr">They say that Reddit is the front page of the internet&#8230;and I completely agree. The most popular memes, trends and internet jokes typical start at Reddit. With over 100 million monthly unique visitors, Reddit is a fantastic place to kick off your viral avalanche.</p>
+<p dir="ltr">The key to succeeding on Reddit is finding the right subreddit. You should only post your content in a relevant subreddit, otherwise you&#8217;ll be accused of spamming.</p>
+<p dir="ltr"><img src="https://lh5.googleusercontent.com/BJYlYt6NmfQipKts_M_DQKpLusWTdEqjqtTsnQ56A658_9hNCOGKLPEKdJyRmZKga4qLkJI2zyYjy0k8PO0M9gFBMGltqE6jEBQ3P6k2D5irwXmkjahaacpazhIJ9wOaCw" alt="" width="624px;" height="216px;" /></p>
+<p dir="ltr">When creating the Roommates&#8217; infographic, Reddit was always the first place to post. But be careful&#8230;if you post too much you&#8217;ll be accused of spam, and you cannot delete people&#8217;s comments.</p>
+<p dir="ltr"><img src="https://lh5.googleusercontent.com/fAF4y2ZeGSN4tq6WBfz15-uWJsKu3BZNDeiZjC8-oH7StzxQMr6qFuSztQ2VNENvIG1fKh8MwKICYY2l0AWMk8Fsipe8LjsJSrewQBe4BxAlwiNnfLo09-aCHyumx5HZGA" alt="" width="431px;" height="263px;" /></p>
+<p dir="ltr">Other sites similar to Reddit are:</p>
+<ul>
+<li>Hacker News</li>
+<li>Digg</li>
+<li>Product Hunt</li>
+<li>Inbound.org</li>
+<li>GrowthHackers</li>
+</ul>
+<p dir="ltr"><strong>Stakeholders</strong></p>
+<p dir="ltr">Remember when we talked about the importance of naming specific people, places, and companies? Well, we may have had a sneaky little reason behind exactly who we named.</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/9uMmUe23hRl6iExcsb8XgSRkABhRfz8TGgBODS9I49KK-TwlIWBvGzwT6Jrb9gdgyI0Yo-5ybYCgAfpka6AAhMvPapEX4f-YHk55H0_TsxPYvArUvFQctpgAaxawpvI4Sw" alt="" width="183px;" height="187px;" /></p>
+<p dir="ltr">When creating viral content, it&#8217;s important to work backwards. Rather naming funny people in your content and hoping they&#8217;ll share, you should find people who: have a large following and you know they&#8217;ll share.</p>
+<p dir="ltr">Stakeholders will naturally share things they&#8217;re mentioned it. It feels good to be mentioned online&#8230;so they&#8217;ll want others to know.</p>
+<p dir="ltr"><span style="text-decoration: underline;">How we applied this to Roommates</span></p>
+<p dir="ltr">We made sure to only mention people who had at least 5,000 Twitter followers. This wasn&#8217;t an exact science, but over time we realized it worked. Before launch day we&#8217;d list all the stakeholder&#8217;s Twitter and Facebook handles. When the big day came we simply Tweeted at them and post on their wall. 9/10 times people retweeted or shared with their followers.</p>
+<p>&nbsp;</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/1qOhhSDdciBdhB8V4zC5_pdjkJJhFnQIVRoMEfvLU1bk1-TaouEXx_WQm7cDNrOwdvIlDrDdAmZ8EZMFKyKFFYxFUwLHIc4GBV9gG_WfwISDsEBUOxEBpcfUUyptW07wuQ" alt="" width="624px;" height="216px;" /><img src="https://lh5.googleusercontent.com/ol5l6t5nE7pnerEZth3qAJLZNDT02bAs58UtgMTkywnGIciCcZljhL85raE3ceqOrAn0u6T9TTzeWM27qoKEkCiHNLp1vf-rx4MMalUrBDjZI66fpE8fLd7pAbatYw7vZg" alt="" width="575px;" height="319px;" /></p>
+<p dir="ltr"><strong>Big Media and Influencers</strong></p>
+<p dir="ltr">Big media coverage or retweets from big names can make or break your viral launch. I like to break this category into two sections: big media and influencers.</p>
+<p dir="ltr"><strong>Big media</strong>: Getting coverage from Techcrunch, New York Times, or Huffington Post can be huge. Not only will this type of coverage create a trickle down effect and convince other blogs/media to write about you, but you&#8217;ll also capture huge amounts of residual traffic months or even years after your initial launch.</p>
+<p dir="ltr">The good news is that most of the journalists from big media will troll Reddit for popular stories, which is yet another reason why you should post your content on Reddit. Additionally, big media likes to follow smaller blogs for story ideas.</p>
+<p dir="ltr">If you want media coverage, I suggest emailing small blogs first and working your way up the chain. This can be a tricky thing and if you want to become an expert at this then I suggest reading Ryan Holiday&#8217;s book <em>Trust Me I&#8217;m Lying</em>.</p>
+<p dir="ltr">But beware: 7/10 times big media will screw up your article. Whether they write incorrect information or forget to link to your site, it&#8217;s important not to solely count on big media.</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/sVEr5CCmqRnmsczlB5m3QsND1s_on_a3Kt9Pc1VWyqciAKiOmTMs6ImyeMx8QuH8WRrnpgMhP8onl2MV4NVwyhgvhAnL29oCnUYoQCW7S28kaQdt7LL7aHjs5FXe-58QLQ" alt="" width="624px;" height="277px;" /></p>
+<p dir="ltr">Influencers: Similar to big media, influencers will have a similar trickle down effect. While influencers may not have as much traffic, chances are their following is more loyal and they&#8217;re easier to contact.</p>
+<p>&nbsp;</p>
+<p dir="ltr"><img src="https://lh3.googleusercontent.com/2XpvesmNIT7dahlUtrYse4ZU8Nf8q5hkxf2luWW5xMDvH--vnsMv0NvLaOA1Ng_1VYr-XKh8uPLndzOXarDPceL7L96snjfENnISZqGpI949cyxSdzd-Yu-VTEP-pjKOkQ" alt="" width="512px;" height="152px;" /></p>
+<p dir="ltr">So, there you have it.  This is how I was able to manufacture hundreds of thousands of views on my infographics.</p>
+<p dir="ltr"><em>Editor&#8217;s note: </em>For more great tips on viral marketing from Sam, check out his conference <a href="http://www.hustlecon.com/">Hustle Con</a>, which is on August 1 in San Francisco.  The focus of this conference is to teach scrappy ways of doing customer acquisition.  Although it&#8217;s geared towards startup founders, who often don&#8217;t have the luxury of attention and press whenever they want, every marketer will learn a TON at this event.  You will learn about other viral marketing mechanisms, such as how Rohin Dhar, the CEO of Priceonomics, grew his blog from 0 to 2.3M monthly visitors with content creation.  Full disclosure: LaunchBit organized the conference last year and this year serves as an advisor.</p>
+<div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/" data-count="vertical" data-text="How I got 250k+ views on my infographic in 1 week" data-via="Launchbit" ></a><script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-url="http://www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/" data-via="Launchbit"></a><script type="text/javascript" src="../../../static.bufferapp.com/js/button.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><script src="../../../connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="index.html" send="false" show_faces="false"  layout="box_count" width="50"  ></fb:like></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='index.html'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../platform.linkedin.com/in.js'></script><div class='dd-linkedin-share'><div data-url='http://www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/' data-counter='top'></div></div></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 60;var dd_top_offset_from_content = 0;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="../wp-content/plugins/digg-digg/js/diggdigg-floating-bar48f5.js?ver=5.3.6"></script>					
+					
+<div id="newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+			<p><a href="https://twitter.com/launchbit" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">follow @dynamick</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+				<!-- Begin MailChimp Signup Form -->
+	<form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name" required>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name" required>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" required>
+        <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+                <input type="hidden" value="postfooter" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+    <script type="text/javascript">
+ga('send','event','leadbox','postfooter-impression');
+</script>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div>
+
+					
+						
+					
+					
+					<section id="comments">
+	
+	
+
+		
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1 parent" id="comment-73857">
+			<article id="div-comment-73857" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/8e19246b7fec76e0c1a251ba0dc0dcdf?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Sam</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-73857">
+			July 3, 2014 at 9:30 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Yeah buddy!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index5e4f.html?replytocom=73857#respond' onclick='return addComment.moveForm("div-comment-73857", "73857", "respond", "6195")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment odd alt depth-2" id="comment-788501">
+			<article id="div-comment-788501" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/66f3c75d12a55c55dbdb340d8ebc1c27?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Christina</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-788501">
+			July 19, 2016 at 1:08 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>I love reading these articles because they&#8217;re short but intmioafrve.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index6d6c.html?replytocom=788501#respond' onclick='return addComment.moveForm("div-comment-788501", "788501", "respond", "6195")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-608248">
+			<article id="div-comment-608248" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/05925d6312ac72f8db6d696f93f56feb?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Saiful</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-608248">
+			April 16, 2015 at 11:51 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Appreciate your advise in above. I have surprised. Thanks!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index09f2.html?replytocom=608248#respond' onclick='return addComment.moveForm("div-comment-608248", "608248", "respond", "6195")'>Reply</a>	</div>
+			</article>
+	</li>
+	</ol>
+
+	
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply to <a href="#comment-73857">Sam</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Cancel reply</a></small></h3>
+									<form action="http://www.launchbit.com/blog/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' placeholder = "How could we call you?" required/></p>
+<p class="comment-form-email"><label for="email">Email<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required='true' placeholder="How could we contact you?" required /></p>
+
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="What do you want ask me?"	></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='6195' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='73857' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d16f64ca7b" /></p><script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form6e0e.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="128"/></p>					</form>
+							</div><!-- #respond -->
+						
+</section> <!-- END: comments if not password protected -->
+				</div>
+			</article>
+			<!-- /Article -->
+
+		</div> <!-- </div class="main"> -->
+
+		
+		
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGBVfDAFcXQ==","queueTime":0,"applicationTime":165,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/how-i-got-250k-views-infographic-1-week/?replytocom=73857 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:09:03 GMT -->
+</html>

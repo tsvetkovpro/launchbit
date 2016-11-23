@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/?replytocom=30383 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>6 things you&#039;re doing wrong with your ad campaigns - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="index.html" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@launchbit"/>
+<meta name="twitter:domain" content="LaunchBit"/>
+<meta name="twitter:creator" content="@launchbit"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/javaisfordouche.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/cola.jpg"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/Screen-Shot-2013-06-06-at-10.18.39-AM.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-9.34.16-AM.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/traders.jpg"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-12.25.58-PM.png"/>
+<meta name="twitter:description" content="When I first started Shiny Orb, a site my co-founder and I created a few years ago, we decided to run a Google AdWords campaign to drive more traffic. I cringe when I think about that experience. We made all the typical noob mistakes and said, &#8220;Geez, advertising doesn&#8217;t work.&#8221; Four years later, I want to make sure that our customers don&#8217;t repeat the advertising mistakes we made. Here are 6 things you are probably doing wrong with your ad campaigns.
+1) Your creative does not stand out.
+If you are paying for advertising on a flat fee or a CPM basis, you need to make sure your creative stands out.&hellip; Read the rest"/>
+<meta name="twitter:title" content="6 things you&#039;re doing wrong with your ad campaigns - LaunchBit"/>
+<meta name="twitter:url" content="http://www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; 6 things you&#8217;re doing wrong with your ad campaigns Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply5589.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='../indexe18d.html?p=4768' />
+      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+		<meta property="og:title" content="6 things you&#8217;re doing wrong with your ad campaigns"/>
+		<meta property="og:description" content="When I first started Shiny Orb, a site my co-founder and I created a few years ago, we decided to run a Google AdWords campaign to drive more traffic. I cringe when I think about that experience. We made all the typical noob mistakes and said, &#8220;Geez, advertising doesn&#8217;t work.&#8221; Four years later, I want to make sure that our customers don&#8217;t repeat the advertising mistakes we made. Here are 6 things you are probably doing wrong with your ad campaigns.
+1) Your creative does not stand out.
+If you are paying for advertising on a flat fee or a CPM basis, you need to make sure your creative stands out.&hellip; Read the rest" />
+		<meta property="og:url" content="http://www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/"/>
+						<meta property="og:type" content="article"
+		/>
+		<meta property="og:site_name" content="LaunchBit"/>
+		<!-- End Open Graph Meta Tags !-->
+
+    <script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="single single-post postid-4768 single-format-standard custom-background 6-things-youre-doing-wrong-with-your-ad-campaigns">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+	
+		<div class="main">
+
+			<!-- Article -->
+			<article id="post-4768" class="post-4768 post type-post status-publish format-standard hentry category-advertising category-marketing tag-advertising tag-best-practices tag-email-marketing post_content">
+
+				<div class="inner">
+
+					<nav><ul class="breadcrumb"><li><a href="../../blog.html">Home</a> <span class="divider">/</span> </li><li><a href="../category/advertising/index.html" title="View all posts in advertising">advertising</a> <span class="divider">/</span> </li><li class="active">6 things you&#8217;re doing wrong with your ad campaigns</li></ul></nav>
+					<div class="prefix"></div>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="index.html" title="6 things you&#8217;re doing wrong with your ad campaigns">6 things you&#8217;re doing wrong with your ad campaigns</a>
+					</h1>
+					<!-- /Post Title -->
+
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by">Published by <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></li>
+						<li class="comments"><a href="index.html#comments" title="Comment on 6 things you&#8217;re doing wrong with your ad campaigns">8 Comments</a></li>
+					</ul>
+					<!-- /Post Details -->
+<!--
+<script type="text/javascript" src="http://www.launchbit.com/js-az/launchbit.js"></script><div class="launchbitaz" launchbit_id="9505"></div> -->
+
+					<a id="dd_start"></a><p>When I first started <a href="2)%20Your%20creative%20does%20not%20stand%20out.html" target="_blank">Shiny Orb</a>, a site my co-founder and I created a few years ago, we decided to run a Google AdWords campaign to drive more traffic. I cringe when I think about that experience. We made all the typical noob mistakes and said, &#8220;Geez, advertising doesn&#8217;t work.&#8221; Four years later, I want to make sure that our customers don&#8217;t repeat the advertising mistakes we made. Here are 6 things you are probably doing wrong with your ad campaigns.</p>
+<p><strong>1) Your creative does not stand out.</strong></p>
+<p>If you are paying for advertising on a flat fee or a CPM basis, you need to make sure your creative stands out. So many people have banner blindness these days, so if you have a banner format to work with, you&#8217;ll want to come up with a creative way to capture attention.  Flip an image upside down. Upload a crazy image. Maybe make it look disgusting. Or beautiful. Use crazy language. Try something weird.</p>
+<p><a href="../wp-content/uploads/2013/06/javaisfordouche.png"><img class="size-full wp-image-4771 aligncenter" title="javaisfordouche" src="../wp-content/uploads/2013/06/javaisfordouche.png" alt="" /></a></p>
+<p style="text-align: center;"> <em style="font-size: 13px; line-height: 19px;">image credit: <a href="http://www.flickr.com/photos/illtemper/2035673765/sizes/o/in/photolist-46TmTx-48QhZ4-48Qi6n-48QiVz-48QjxR-48QjJ2-48QjXc-48Qk9c-48Qkzk-48QkMc-48QkVp-48Qm7a-48Qmhx-48Qmqg-48QmzH-48QmG4-48QmR8-48Qn1V-48Qn7t-48UjBA-48UjGY-48Uk1G-48Uk93-48UkgQ-48UkuN-48UkV1-48Un5L-4abqQ2-4mgciZ-4mwB2s-4s4WS4-4s4WSk-4s4WSK-4s9139-4zkdCD-4C9eMW-4PRuHg-4SBRYu-4SBUtf-59zGPa-5rUim7-5zsQJV-5J9Uvz-61GiJV-61GiQv-68mZ7k-6aC9w9-6fUXPc-6fZ9oG-6gG8sc-6uqsZb/" target="_blank">br7tt</a></em></p>
+<p>If you are using <a style="font-size: 13px; line-height: 19px;" href="../../index.html" target="_blank">LaunchBit</a>or Google AdWords (or some other performance network), this doesn&#8217;t matter, because you are paying only for clicks you receive.</p>
+<p><strong>2) Your creative is not specific.</strong></p>
+<p>Lots of advertisers will tell you that sponsored content, such as a sponsored blog post or a dedicated email, tends to be really effective. Why? It does well because you have a few paragraphs to explain the problem you solve and why people should trust you, etc. You have a lot of words to sell people on your product.</p>
+<p>In contrast, you have very little space in banner ads or small text ads to present all the information you want. So a lot of marketers end up using that space to show pretty images or their logo. THIS IS THE WRONG WAY TO USE THAT SPACE. Unless you are Coca Cola, who the heck recognizes your logo??</p>
+<p><a href="../wp-content/uploads/2013/06/cola.jpg"><img class="size-full wp-image-4772 aligncenter" title="cola" src="../wp-content/uploads/2013/06/cola.jpg" alt="" /></a></p>
+<p style="text-align: center;"> <em style="font-size: 13px; line-height: 19px;">image credit: <a href="http://www.flickr.com/photos/andycastro/3802796857/sizes/m/in/photolist-6N3k24-71voP7-7gCDdy-7jQXJS-7vzmQi-7WVDJ6-d4cdvo-d4cavE-d4bRfu-d4bz7L-d4cmt5-d4bWJq-d4cq49-d4csSf-d4bDfu-d4bGBd-d4chsy-d4c2Yj-d4bsi5-d4bvUE-d4c7Co-d4bLjY-d4dM5w-d4erew-d4dS2f-d4dgLN-d4dmFA-d4cZEb-d4ecK9-d4dcSS-d4esH5-d4cVuo-d4dft5-d4djeu-d4dtim-d4ejyJ-d4d8uL-d4dqMo-d4e7zQ-d4da8s-d4dG9y-d4dNp5-d4dW25-d4d7au-d4epXu-d4dX5W-d4duxW-d4dKFU-d4d3m9-d4dPEW-d4e2Ls/" target="_blank">andy castro</a></em></p>
+<p>You should be using the little space you have to make a compelling pitch for your call-to-action, spelling out how people can benefit from whatever you are trying to sell. This brings me to point number two.</p>
+<p><strong>3) You are trying to drive immediate sales.</strong></p>
+<p>This is what a lot of startups do. They&#8217;ll take out an ad campaign and will send people to their homepage and expect sales to come rushing in. This does not happen. People don&#8217;t know you. They don&#8217;t trust you. They&#8217;re not going to buy from you right away. Would you buy from any random person? You need to build a relationship.</p>
+<p>The best marketers drive people to a dedicated landing page where the only call-to-action is to sign up for an ebook or a white paper or a lookbook or something.</p>
+<p style="text-align: center;"><a href="../wp-content/uploads/2013/06/Screen-Shot-2013-06-06-at-10.18.39-AM.png"><img class="wp-image-4773" title="Screen Shot 2013-06-06 at 10.18.39 AM" src="../wp-content/uploads/2013/06/Screen-Shot-2013-06-06-at-10.18.39-AM.png" alt="" width="694" height="350" /></a></p>
+<p style="text-align: center;"><em style="font-size: 13px; line-height: 19px;">One of many <a href="http://www.hubspot.com/" target="_blank">HubSpot</a> ebook landing pages</em></p>
+<p>Asking for email address is a simpler call-to-action that a lot more people are willing to do. Once you get that email address, you&#8217;ll need to build a relationship with your leads. The funny thing is that a lot of startups actually already know this as a best practice of advertising, but because they are so swamped, they don&#8217;t take the time to build a separate landing page or write an ebook or whatnot. So, they just send traffic to their homepage hoping for sales. This just isn&#8217;t going to work &#8212; you are basically throwing your money away if you do this.</p>
+<p>Moreover, because ad spaces are often small, it&#8217;s a lot easier to write a small ad compelling people to sign up for your ebook. And, then later, you can use all the words you want to build the relationship and eventually sell to the subscriber.</p>
+<p><strong>4) Your call-to-action is confusing.</strong></p>
+<p style="text-align: center;"><a href="../wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-9.34.16-AM.png"><img class="wp-image-4781" title="Screen Shot 2013-06-07 at 9.34.16 AM" src="../wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-9.34.16-AM.png" alt="" width="601" height="309" /></a></p>
+<p style="text-align: center;"> <em style="font-size: 13px; line-height: 19px;">What yvettesbridal.com used to look like</em></p>
+<p>When you create your landing page, make sure to focus on clarity. You may think your messaging makes sense, but very often it doesn&#8217;t. Get a third party &#8212; a friend or relative or anyone really &#8212; to take a look at your copy and see if they understand what you mean. Make sure to have just one call-to-action and a limited number of links. The last thing you want to do is have a small, obscure sign up box, and a ton of links that can send your prospective lead away.</p>
+<p><strong>5) You don&#8217;t understand what kind of traffic you will get when you bid.</strong></p>
+<p>This is a big topic specific to cost-per-click (CPC) networks (such as LaunchBit ads, Google AdWords, and Facebook ads) that most marketers don&#8217;t understand.</p>
+<p>First, you should bid whatever CPC makes sense for your business. This can be hard to know if you are just starting out. (more on this in the next point) That said, if the max you can bid is say $0.25, then you should understand what kind of traffic you are going to be getting. You will be largely getting traffic from developing nations. This is because ad networks price clicks differently &#8212; they realize a click from someone who is a professional who earns a high income and is based in the US is more valuable than someone who is unemployed, just started using the internet, and is in a developing country. If your product is strictly for people living in the US, you should make sure you use geotargeting filters. Even ad networks that don&#8217;t publicly display a geotargeting feature will often be able to do geotargeting if you ask them, but it will probably end up requiring a higher bid to get any meaningful traffic.</p>
+<p><a href="../wp-content/uploads/2013/06/traders.jpg"><img class="size-full wp-image-4794 aligncenter" title="traders" src="../wp-content/uploads/2013/06/traders.jpg" alt="" /></a></p>
+<p style="text-align: center;"> <em style="font-size: 13px; line-height: 19px;">image credit: <a href="http://www.flickr.com/photos/sweetmojo/2349268098/sizes/m/in/photolist-4zAByo-4D5WmY-4DwQkL-4DNixN-4DNjWL-4DNmpY-4DNnGw-4DNp3Y-4MMFqt-4MMFK8-4MRSDU-4MRSZ5-4MRTjq-4RsBnH-4RsBtn-4RsBzi-4RwNGm-53tPZa-53x7CJ-54u6hp-5dEkdv-5dEkoz-5AaA1w-5CkvZQ-5DMD7n-5DRUKS-5Fasbg-5GKeQi-5KBpQL-5LVGrh-5N5SDv-5NYDi2-5V5Ari-5XZbAw-6bwRMV-6hi1Wx-6kuUjz-6pmAfj-6AEfwz-6AEfyc-6AJoQY-6AJoZ1-6AJp2b-6Dd7wW-6X4Rnr-6ZWZqp-711ZyC-73SzbZ-773mXi-79SWGY-7fqwoE/" target="_blank">MojoBaer</a></em></p>
+<p>Users who are less sophisticated with the internet tend to click on ads more, and these people tend to come from developing countries where the internet is still fairly new. This is akin to how in the 90s, <a href="http://andrewchen.co/2012/04/05/the-law-of-shitty-clickthroughs/" target="_blank">banner click-through-rates in the US were as high as 78%</a>. So, even if your product can be bought anywhere in the world, you should realize that a lot of your clicks will be wasted. So, in some sense, yes, you want to bid what makes sense for your business, but if that number is too low, then ads will probably not be a growth strategy for your business.</p>
+<p>Lastly, lots of marketers think that just because they bid high, they will get lots of clicks or their ad rank will be at the top This isn&#8217;t true. Ad networks factor in your click-through-rate when determining how many impressions to give you. Here&#8217;s a simple example of why this is:</p>
+<ul>
+<li>Bob bids $2.00 and has a 5% click-through-rate</li>
+<li>Tom bids $3.00 and has a 2% click-through-rate.</li>
+</ul>
+<p>An ad network charges $2 * 5% = $10 for every 100 impressions with Bob but charges only $6 for every 100 impressions with Tom. So, of course, the ad network is going to favor Bob&#8217;s ad even though he is bidding 33% less!</p>
+<p><a href="../wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-12.25.58-PM.png"><img class="aligncenter size-full wp-image-4807" title="Screen Shot 2013-06-07 at 12.25.58 PM" src="../wp-content/uploads/2013/06/Screen-Shot-2013-06-07-at-12.25.58-PM.png" alt="" /></a></p>
+<p style="text-align: center;"><em>Google AdWords interface </em></p>
+<p style="text-align: left;">CPC ad networks know that advertisers only have a small amount of wiggle room with their bids but have the ability to increase their click-through-rate by changing their creative. So, to incentivize advertisers to produce ads with high CTRs, most ad networks won&#8217;t charge you at your bid &#8212; they&#8217;ll charge you something lower. Typically, what you are actually charged is based on a modified 2nd price auction. So, if you have a high CTR, you will be rewarded by being charged a lower cost-per-click regardless of what you are bidding. This is the best way to get a lot of cheaper clicks.</p>
+<p><strong>6) You don&#8217;t understand your product&#8217;s lifetime value.</strong></p>
+<p>Lastly, if you want to use advertising to scale your business, you must have an estimate for the lifetime-value of each of your customers. This ca be difficult to compute as a startup, but simplistically, if you expect to make over $300 per new customer, then advertising is potentially a good way to scale if your customers can be found online. Here&#8217;s the rough math:</p>
+<p>Spend $1000 on advertising:</p>
+<ul>
+<li>$2.50 per click =&gt; 400 visitors to your landing page</li>
+<li>30% conversion on your ebook landing page =&gt; 120 signups</li>
+<li>30% open rate on your emails =&gt; 36 people read your emails</li>
+<li>Eventually convert 20% of these readers to paying customers =&gt; 7 people become paying customers</li>
+</ul>
+<p>=&gt; $2100 in new revenue on a $1000 ad buy</p>
+<p>This funnel is VERY DOABLE and repeatable if you have a Saas product. There is no reason why Saas marketers should not be just doing this kind of user acquisition, because you have the margins to play with. If you are charging something like $29.99 each month, and your users stick around for at least a year, you are making more than $360 in revenue on each user, making the funnel I described above easy even if your funnel numbers are not that good initially. This funnel can also work well for daily deal companies and products that charge a lot (such as insurance).</p>
+<p>The flip side is that companies who have much lower lifetime values for their customers are not a good fit for growing their businesses through advertising. It&#8217;s important to understand or take a best guess about whether a) your customers are reachable on the web and b) if the lifetime-value of your customers is above or below the $300 proxy.</p>
+<div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/" data-count="vertical" data-text="6 things you're doing wrong with your ad campaigns" data-via="Launchbit" ></a><script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-url="http://www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/" data-via="Launchbit"></a><script type="text/javascript" src="../../../static.bufferapp.com/js/button.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><script src="../../../connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="index.html" send="false" show_faces="false"  layout="box_count" width="50"  ></fb:like></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='index.html'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../platform.linkedin.com/in.js'></script><div class='dd-linkedin-share'><div data-url='http://www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/' data-counter='top'></div></div></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 60;var dd_top_offset_from_content = 0;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="../wp-content/plugins/digg-digg/js/diggdigg-floating-bar48f5.js?ver=5.3.6"></script>					
+					
+<div id="newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+			<p><a href="https://twitter.com/launchbit" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">follow @dynamick</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+				<!-- Begin MailChimp Signup Form -->
+	<form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name" required>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name" required>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" required>
+        <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+                <input type="hidden" value="postfooter" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+    <script type="text/javascript">
+ga('send','event','leadbox','postfooter-impression');
+</script>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div>
+
+					
+						
+					
+					
+					<section id="comments">
+	
+	
+
+		
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1 parent" id="comment-30382">
+			<article id="div-comment-30382" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/b398b798cc45b6cd480a011fee80ba03?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">John Lynn</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30382">
+			June 7, 2013 at 3:11 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>&#8220;If you are using LaunchBit or Google AdWords (or some other performance network), this [type of creative] doesn’t matter, because you are paying only for clicks you receive.&#8221;</p>
+<p>This isn&#8217;t really true.  It still matters what kind of creative you use even on a ppc model.  First, because you want to make sure that the ad encourages the people you want us customers will click the ad and those you don&#8217;t want as customers don&#8217;t click the ad.  The ad creative can serve as a filter of sorts for potential customers.  Plus, as you mention, if your ad doesn&#8217;t encourage enough clicks, then your cost per click will be more.</p>
+<p>Good article though.  There&#8217;s definitely a lot people who don&#8217;t understand the advertising side of things.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index553f.html?replytocom=30382#respond' onclick='return addComment.moveForm("div-comment-30382", "30382", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-30386">
+			<article id="div-comment-30386" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30386">
+			June 7, 2013 at 8:21 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Thanks for reading, John.  Sure, I agree&#8230; <img src='../wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />   I was rather sloppy in writing this post (so many typos that I don&#8217;t have time to fix).  Yes, creative does matter for all cases.  You can&#8217;t just put out a bad ad.  </p>
+<p>What I meant to say is that, you care less about trying to maximize clicks under PPC platforms than under flat rate or CPM.  If you&#8217;re paying CPM, you really want your creative to stand out.  </p>
+<p>Yes, you pay more on a CPC system if your CTR is lower.  But again, another sloppy mistake on my part &#8212; I should&#8217;ve said lower w/ respect to your competitor ads.  A good portion of CTR is actually attributed to ad format.  </p>
+<p>So, pulling this altogether &#8212; say, you&#8217;re thinking about taking out an ad on a blog.  And, it&#8217;s tucked away in the corner.  If you&#8217;re paying on a CPM or flat rate, you really want your ad to stand out because you want to get your money&#8217;s worth.  If you&#8217;re paying on CPC, say on Google AdWords, you care less about standing out.  Your ad just needs to do better than other ads that could be going in that slot, but it doesn&#8217;t mean you have to go above and beyond crazy to stand out.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexe593.html?replytocom=30386#respond' onclick='return addComment.moveForm("div-comment-30386", "30386", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+	<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-30383">
+			<article id="div-comment-30383" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/9a10660ba611d078c2307c971caa1c72?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Bernie</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30383">
+			June 7, 2013 at 3:28 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Great article Elizabeth! What&#8217;s your rule of thumb for </p>
+<p>1) what % your CPA should be of your lifetime profit (not revenue), and<br />
+2) how many months you should target to get &#8220;paid back&#8221; on your acquisition cost? </p>
+<p>We try to target roughly 1/3 for #1, and 3-4 months for #2. Curious to hear what you&#8217;ve seen/heard.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index21f0.html?replytocom=30383#respond' onclick='return addComment.moveForm("div-comment-30383", "30383", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-30388">
+			<article id="div-comment-30388" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30388">
+			June 7, 2013 at 8:35 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Thanks, Bernie!  Good questions!</p>
+<p>1) I was a bit sloppy here as well.  I assumed that most companies reading this would be Saas companies where COGs are relatively negligible.  I&#8217;m not really sure what the numbers should look like for a non-Saas businesses.  I would guess that a good proxy would be to take the LTV &#8211; COGs and use that # as your LTV.  This would model your business more like a Saas business.  So, 1/3 seems like a good number to use in your case.  </p>
+<p>2) I only know a bit anecdotally.  I hear all kinds of numbers of current and prospective customers when I ask them what success looks like.  For some companies, they want to break even within 6 months.  For others, they aim for a year or a year and a half.  3-4 months is definitely on the faster side from what I hear anecdotally.  </p>
+<p>But, for both of these answers, I think it also depends a lot on how well capitalized a company is, too&#8230; <img src='../wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexe745.html?replytocom=30388#respond' onclick='return addComment.moveForm("div-comment-30388", "30388", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+	<li class="comment even thread-even depth-1 parent" id="comment-30385">
+			<article id="div-comment-30385" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/bcc678d61751a9fbb3f81342ce262736?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Marcus Mavakala</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30385">
+			June 7, 2013 at 6:09 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Really Good article.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexebd4.html?replytocom=30385#respond' onclick='return addComment.moveForm("div-comment-30385", "30385", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-30387">
+			<article id="div-comment-30387" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30387">
+			June 7, 2013 at 8:21 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Thanks for reading, Marcus!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index8c1d.html?replytocom=30387#respond' onclick='return addComment.moveForm("div-comment-30387", "30387", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+	<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-30412">
+			<article id="div-comment-30412" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/3e2c5cc28e1cb986f40b7cd68f227aa7?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Taylor Gould</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30412">
+			June 11, 2013 at 3:59 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Great article. For companies with a freemium SaaS product, do you still recommend driving paid advertising to a softer CTA (like a HubSpot white paper), or do you consider driving to an install page for the free version of the product? I understand there are lots of factors to consider (I do every day..), but just curious what your thoughts are. </p>
+<p>For example &#8211; SEOmoz which offers a 30 day free trial (similar to freemium)</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexbe1a.html?replytocom=30412#respond' onclick='return addComment.moveForm("div-comment-30412", "30412", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-30430">
+			<article id="div-comment-30430" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30430">
+			June 14, 2013 at 8:29 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Hey Taylor &#8212; great question.  We&#8217;ve seen both in our network, and in talking with advertisers, we&#8217;ve found that for *most* advertisers, driving sign ups to a free trial or a free package doesn&#8217;t work well.  <img src='../wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' />   I suspect that B2B customers are just not particularly price sensitive.  They are more concerned about spending their time effectively and using products that solve problems.  So, even if you are throwing all kinds of free stuff at them, if it&#8217;s not useful, they won&#8217;t sign up.  </p>
+<p>That said, we do also have advertisers who find success in driving free trials.  I don&#8217;t have enough data yet to even conjecture why some Saas companies have more success with the latter while others don&#8217;t at all&#8230;</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index6c86.html?replytocom=30430#respond' onclick='return addComment.moveForm("div-comment-30430", "30430", "respond", "4768")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+	</ol>
+
+	
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply to <a href="#comment-30383">Bernie</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Cancel reply</a></small></h3>
+									<form action="http://www.launchbit.com/blog/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' placeholder = "How could we call you?" required/></p>
+<p class="comment-form-email"><label for="email">Email<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required='true' placeholder="How could we contact you?" required /></p>
+
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="What do you want ask me?"	></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='4768' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='30383' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="110b752200" /></p><script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form6e0e.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="138"/></p>					</form>
+							</div><!-- #respond -->
+						
+</section> <!-- END: comments if not password protected -->
+				</div>
+			</article>
+			<!-- /Article -->
+
+		</div> <!-- </div class="main"> -->
+
+		
+		
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGBVfDAFcXQ==","queueTime":0,"applicationTime":158,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/6-things-youre-doing-wrong-with-your-ad-campaigns/?replytocom=30383 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:09 GMT -->
+</html>

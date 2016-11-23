@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/author/admin/page/11/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:15:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>Elizabeth Yin, Author at LaunchBit - Page 11 of 13 : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../../../../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../../../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../../../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../../../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../../../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../../../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<link rel="prev" href="../10/index.html" />
+<link rel="next" href="../12/index.html" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Posts by Elizabeth Yin Feed" href="../../feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../../../../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../../../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../../../../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../../../../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="archive paged author author-admin author-1 custom-background paged-11 author-paged-11">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../../../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../../../../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../../../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../../../../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+	
+<div class="row">
+	
+	<!-- Section -->
+	<section class="span8">
+
+		<div class="main">
+
+			<div class="section">
+				
+					
+				
+								
+								
+			</div>
+
+			
+	<!-- Article -->
+	
+	<article id="post-26" class="post-26 post type-post status-publish format-standard hentry category-lead-generation tag-landing-page tag-messaging" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../get-clarity-landing-page-messaging/index.html" title="Get clarity: Landing Page Messaging">Get clarity: Landing Page Messaging</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>Many new web entrepreneurs jump into posting their landing pages right away.  It&#8217;s easy to do.  But, when web visitors don&#8217;t convert, it&#8217;s hard to say if it&#8217;s because they don&#8217;t like the proposition or they can&#8217;t understand/misunderstand the proposition on the page.  You&#8217;ll want to mitigate the risk of the latter by first making sure your landing page is as clear as possible so that you can remove the latter possibility as a reason for visitors bouncing.</p>
+<p>We use <a href="fivesecondtest.html">FiveSecondTest</a> to test out our landing page messaging before running any web traffic to our actual landing pages.  Here&#8217;s an example of a messaging test we ran for LaunchBit in the very beginning:</p>
+<div class="p_embed p_image_embed"><a href="../../../../../../getfile2.posterous.com/getfile/files.posterous.com/temp-2011-01-24/yaFeebldmymcdErqyfDjgisjchzFuzewvJxfaBtDCBhAnbgFnlrwpCsjvHhj/fivesecondtest2.jpg.scaled1000.html"><img src="../../../../wp-content/uploads/2011/04/fivesecondtest2.jpg.scaled500-300x160.jpg" alt="Fivesecondtest2" width="500" height="267" /></a></div>
+<p>In our minds, we thought we were clearly messaging that LaunchBit would help new entrepreneurs start their web businesses with step-by-step guidance.&hellip; <a href="../../../../get-clarity-landing-page-messaging/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-27" class="post-27 post type-post status-publish format-standard hentry category-business category-product-development tag-lean-startup" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../the-lean-startup-a-review-of-eric-ries-new-book/index.html" title="The Lean Startup &#8212; a Review of Eric Ries&#8217; New Book">The Lean Startup &#8212; a Review of Eric Ries&#8217; New Book</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><div style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 13px; background-color: #ffffff; margin: 8px;">
+<div class="p_embed p_image_embed"><img src="../../../../wp-content/uploads/2011/04/lean_book.png.scaled500-227x300.png" alt="Lean_book" width="322" height="425" /></div>
+<p>By Elizabeth</p>
+<p>I&#8217;ve read a lot of business books over the years &#8212; for school, for *fun*, for work.  Most of them are just ok &#8212; largely intuitive and too high level to be useful.  I wouldn&#8217;t recommend most books I&#8217;ve read to anyone.  But, I just finished reading a draft of Eric Ries&#8217; new book, <em><a href="http://lean.st/launchbit">The Lean Startup</a></em>.  This is a must read for all internet entrepreneurs and a compelling read for anyone who&#8217;s ever wanted to cut waste out of new projects&#8230;including stuffing envelopes!</p>
+<p><strong>Synopsis</strong></p>
+<p>For those not familiar with <a href="http://www.startuplessonslearned.com/">Ries&#8217; work</a>, this book is focused on reducing &#8220;business waste,&#8221; the time, money, and resources that companies spend building things people don&#8217;t want.</p>&hellip; <a href="../../../../the-lean-startup-a-review-of-eric-ries-new-book/index.html" class="read_more">Read the rest</a></div></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-28" class="post-28 post type-post status-publish format-standard hentry category-business tag-lean-startup tag-minimum-viable-product" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../web-2-0-expo-stanford-gsb-and-lean-startup-machine-nyc/index.html" title="Web 2.0 Expo, Stanford GSB, and Lean Startup Machine NYC">Web 2.0 Expo, Stanford GSB, and Lean Startup Machine NYC</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Jennifer</p>
+<p>One week, two coasts. A total whirlwind, in my mind. Glad to be back in Boston where I can finally catch a breath. Whew.</p>
+<p>Did you catch us at <strong>Web 2.0 Expo 2011 in San Francisco</strong> last week? We ran a three-hour workshop called <a href="http://www.web2expo.com/webexsf2011/public/schedule/detail/17553">Get Going: How to Build and Test Your Idea without Programming</a>. While similar to some of our previous talks, the extended time allowed us to get the audience involved in some hands-on practice. We worked on doing customer interviews as well as brainstorming creative minimum viable products. You can catch the talk portion of the workshop in the videos below.&hellip; <a href="../../../../web-2-0-expo-stanford-gsb-and-lean-startup-machine-nyc/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-29" class="post-29 post type-post status-publish format-standard hentry category-business tag-customer-development tag-interviewing-customers tag-lean-startup" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../hate-talking-with-customers-go-to-lean-startup-machine/index.html" title="Hate talking with customers? Go to Lean Startup Machine">Hate talking with customers? Go to Lean Startup Machine</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>Let&#8217;s be honest &#8212; talking with potential customers is a drag.  I get nervous in talking with people about their behavior, especially when I have to ask questions about price and how much they might expect to pay for things.  I don&#8217;t want to hear about why someone won&#8217;t use my potential product idea.  I don&#8217;t want to hear people&#8217;s lukewarm responses either.  I really really dread talking with potential customers.</p>
+<p>And yet, with each business idea, I know I have to do it.  Just in talking with a handful of people, I know I can immediately get clarity around whether a product idea will fit a particular user&#8217;s behavior or not.&hellip; <a href="../../../../hate-talking-with-customers-go-to-lean-startup-machine/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-30" class="post-30 post type-post status-publish format-standard hentry category-business tag-cofounders tag-technical-cofounder" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../why-you-cant-recruit-a-technical-cofounder/index.html" title="Why you can(&#8216;t) recruit a technical cofounder">Why you can(&#8216;t) recruit a technical cofounder</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Jennifer</p>
+<p>Our vision for LaunchBit centers around <a href="../../../../../index.html">helping people get their web business ideas off the ground</a>. There are a lot of aspects to this ranging from finding your first paying customer and validating your idea to putting together a minimum viable product that let&#8217;s you learn about your business as quickly as possible. We know, however, that at some point, especially if you yourself are not technically-savvy, there will be a time where getting some technical expertise on the team is essential to continue progressing.</p>
+<p>Putting aside the questions of when you should find a technical person or whether that technical person should be a cofounder or an employee, today I&#8217;m going to focus on the question that Elizabeth and I hear over and over (and over) again: <strong>How do I find a technical cofounder??</strong>&hellip; <a href="../../../../why-you-cant-recruit-a-technical-cofounder/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-31" class="post-31 post type-post status-publish format-standard hentry category-business tag-customer-development tag-lean-startup tag-minimum-viable-product" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../wrap-up-from-naceas-lean-startup-methodology-conference/index.html" title="Wrap up from NACEA&#8217;s Lean Startup Methodology Conference">Wrap up from NACEA&#8217;s Lean Startup Methodology Conference</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>On Saturday, I had the pleasure of attending and serving as a panelist at the <a href="http://www.naceaus.org/meeting_2011_3_5_info.htm">North American Chinese Entrepreneurs Association conference</a> on the Lean Startup Method.  Together with investors John Ason and <a href="http://www.milestonevp.com/team.html#goodman">Ed Goodman</a> and entrepreneurs <a href="http://www.architexa.com/about/team">Vineet Sinha</a> and <a href="http://www.getharvest.com/about/meet-the-team">Danny Wen</a>, we fielded a number of great questions about the Lean Startup Method.  The panel was moderated by serial entrepreneur <a href="http://www.sourcepad.com/about_us">Joe Chin</a>, who led us through a number of thought-provoking discussion topics, and the audience had great questions throughout the day.</p>
+<div class="p_embed p_image_embed"><img src="../../../../wp-content/uploads/2011/03/DSCN0328.JPG.scaled500-300x168.jpg" alt="Dscn0328" width="480" height="270" /></div>
+<p><strong>Is the Lean Startup Method formulaic?</strong></p>
+<p>There are definitely mixed views on this question amongst Lean Startup proponents.&hellip; <a href="../../../../wrap-up-from-naceas-lean-startup-methodology-conference/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-32" class="post-32 post type-post status-publish format-standard hentry category-business tag-boston tag-lean-startup" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../get-out-of-the-building-lean-startup-machine-rolls-through-boston/index.html" title="Get out of the building! Lean Startup Machine rolls through Boston">Get out of the building! Lean Startup Machine rolls through Boston</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>We spent this past weekend mentoring teams at <a href="http://boston.theleanstartupmachine.com/">Lean Startup Machine</a> in Boston.  Despite the fact that it was just one weekend, the lead organizer, <a href="http://twitter.com/#!/to2">Trevor Owens</a>, made sure that everyone walked away with important startup lessons.  It was an amazing experience.  If you&#8217;re an aspiring or current entrepreneur and you haven&#8217;t attended a Lean Startup Machine, you should totally go to the next one, which will be in New York in mid-April.  It will definitely sell out quickly, and there may even be an application process.  Nonetheless, you should try to go.</p>
+<p>Unlike other entreprenerial events where you spend your weekend building a product, the Lean Startup Machine is about validating your market and finding your first customers before you have a full-fledged product.&hellip; <a href="../../../../get-out-of-the-building-lean-startup-machine-rolls-through-boston/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-business tag-boston tag-lean-startup" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../wrap-up-from-techstars-and-mit-events/index.html" title="Wrap up from TechStars and MIT events">Wrap up from TechStars and MIT events</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>Last week, we had a great time co-organizing two events with <a href="http://www.techstars.org/boston/">TechStars Boston</a> and the <a href="http://entrepreneurship.mit.edu/">MIT Entrepreneurship Center</a> &amp; <a href="http://miter.mit.edu/">MIT Entrepreneurship Review</a>.  These were our first events since moving to Cambridge, MA.  Here are the slides from the event:</p>
+<div><strong style="display: block; margin: 12px 0 4px;"><a title="Get going - Boston" href="http://www.slideshare.net/dunkhippo33/get-going-boston">Get going &#8211; Boston</a></strong><br />
+<object width="425" height="355" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getgoing-boston-110218092129-phpapp02&amp;stripped_title=get-going-boston&amp;userName=dunkhippo33" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed width="425" height="355" type="application/x-shockwave-flash" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getgoing-boston-110218092129-phpapp02&amp;stripped_title=get-going-boston&amp;userName=dunkhippo33" allowFullScreen="true" allowScriptAccess="always" allowfullscreen="true" allowscriptaccess="always" /></object>
+<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/dunkhippo33">Elizabeth Yin</a>.</div>
+</div>
+<p>Both events sold out very quickly (4 hours for the TechStars one!), and attendees brought great questions.  I thought it was useful to include a couple of these questions below.</p>
+<p><strong>Your numbers for your Wed Connect experiment are statistically insignificant.  How can you draw conclusive results?</strong></p>
+<p>Good question!&hellip; <a href="../../../../wrap-up-from-techstars-and-mit-events/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-34" class="post-34 post type-post status-publish format-standard hentry category-lead-generation tag-customer-development tag-interviewing-customers" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../customer-research-writing-interview-questions/index.html" title="Customer research: writing interview questions">Customer research: writing interview questions</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p>When we interview people, we&#8217;ll ask two sets of questions: 1) about routine, habit, and usage and 2) about our product idea/mocks/demo.</p>
+<p>For us at LaunchBit, in the beginning of doing pure research, we usually like to ask more behaviorial questions (70-80% of the interview) and fewer questions about our specific idea (20-30%).  Just like other entrepreneurs, a specific product idea will drive us to find potential customers to interview.  However, we&#8217;ll usually discover in our interviews that while a close opportunity exists, our initial product idea doesn&#8217;t quite address the opportunity well.  So, then we&#8217;ll really focus on trying to understand a particular pain point and then iterate our product idea to address that need.&hellip; <a href="../../../../customer-research-writing-interview-questions/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-35" class="post-35 post type-post status-publish format-standard hentry category-product-development tag-best-practices tag-keyword-searches tag-launch tag-startup" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../../../best-practices-for-keyword-search-research/index.html" title="Best practices for Keyword Search Research">Best practices for Keyword Search Research</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p><span style="font-size: small;">Keyword searches are a great way to learn about how your potential customers are thinking about solving their problems.  Many web marketers do keyword searches to scale their businesses via search engine optimization (SEO) and search engine marketing (SEM).  However, we&#8217;re going to talk about keyword searches for a different purpose &#8212; for market research.  </span></p>
+<p><span style="font-size: small;">Before starting a web business, we want to know how to think about the landscape of a size given market &#8212; there are a number of techniques to do this research, and keyword research is just a small part of this research process.  However, it&#8217;s one of the more overlooked methods.  We&#8217;ll want to do keyword searches to learn about problems people are facing, current solutions, alternatives, and competitor presence.  We&#8217;ll look at this from two angles &#8212; searching for problems and searching for solutions.</span>&hellip; <a href="../../../../best-practices-for-keyword-search-research/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+
+			<!-- Pagination -->
+			<nav id="pagination">
+				<a class="prev page-numbers" href="../10/index.html">&laquo; Previous</a>
+<a class='page-numbers' href='../1/index.html'>1</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='../9/index.html'>9</a>
+<a class='page-numbers' href='../10/index.html'>10</a>
+<span class='page-numbers current'>11</span>
+<a class='page-numbers' href='../12/index.html'>12</a>
+<a class='page-numbers' href='../13/index.html'>13</a>
+<a class="next page-numbers" href="../12/index.html">Next &raquo;</a>			</nav>
+			<!-- /Pagination -->
+
+		</div>
+
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../../../../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../../../../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../../../../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../../../../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../../../../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../../../../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../../../../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../../../../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../../../../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../../../../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../../../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../../../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../../../../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGAdDFg5fSg==","queueTime":0,"applicationTime":158,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/author/admin/page/11/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:15:37 GMT -->
+</html>

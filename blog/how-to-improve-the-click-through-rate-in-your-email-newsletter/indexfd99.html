@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/?replytocom=481213 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>How to improve the click-through-rate in your email newsletter - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="index.html" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@launchbit"/>
+<meta name="twitter:domain" content="LaunchBit"/>
+<meta name="twitter:creator" content="@launchbit"/>
+<meta name="twitter:image:src" content="http://www.newsletterdirectory.co/images/bigenvelope.gif"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2012/11/open_click_content1.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2012/11/open_click_ads.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2012/11/open_click_ads_digest.png"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2012/11/digest_nondigest.png"/>
+<meta name="twitter:description" content="
+By Zach and Elizabeth
+This is part II of a 3 part series on stats and best practices for improving your open rates, subscribe/unsubscribe rates, and click-through-rates in your email newsletters.
+Click-through-rate on content positively correlates with open rate
+According to Statwing (which is an awesome stats tool!), there is a very high statistical significance of higher open rates being a predictor of higher click-through-rates on your newsletter content.
+
+This is extremely intriguing.  In other words, if List A has 1000 people and a 30% open rate and List B has 2000 people and a 15% open rate, the net number of people opening an email is the same.&hellip; Read the rest"/>
+<meta name="twitter:title" content="How to improve the click-through-rate in your email newsletter - LaunchBit"/>
+<meta name="twitter:url" content="http://www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; How to improve the click-through-rate in your email newsletter Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply5589.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='../index5d95.html?p=863' />
+      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+		<meta property="og:title" content="How to improve the click-through-rate in your email newsletter"/>
+		<meta property="og:description" content="
+By Zach and Elizabeth
+This is part II of a 3 part series on stats and best practices for improving your open rates, subscribe/unsubscribe rates, and click-through-rates in your email newsletters.
+Click-through-rate on content positively correlates with open rate
+According to Statwing (which is an awesome stats tool!), there is a very high statistical significance of higher open rates being a predictor of higher click-through-rates on your newsletter content.
+
+This is extremely intriguing.  In other words, if List A has 1000 people and a 30% open rate and List B has 2000 people and a 15% open rate, the net number of people opening an email is the same.&hellip; Read the rest" />
+		<meta property="og:url" content="http://www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/"/>
+						<meta property="og:type" content="article"
+		/>
+		<meta property="og:site_name" content="LaunchBit"/>
+		<!-- End Open Graph Meta Tags !-->
+
+    <script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="single single-post postid-863 single-format-standard custom-background how-to-improve-the-click-through-rate-in-your-email-newsletter">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+	
+		<div class="main">
+
+			<!-- Article -->
+			<article id="post-863" class="post-863 post type-post status-publish format-standard hentry category-email-marketing tag-click-through-rate tag-email-marketing post_content">
+
+				<div class="inner">
+
+					<nav><ul class="breadcrumb"><li><a href="../../blog.html">Home</a> <span class="divider">/</span> </li><li><a href="../category/email-marketing/index.html" title="View all posts in email marketing">email marketing</a> <span class="divider">/</span> </li><li class="active">How to improve the click-through-rate in your email newsletter</li></ul></nav>
+					<div class="prefix"></div>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="index.html" title="How to improve the click-through-rate in your email newsletter">How to improve the click-through-rate in your email newsletter</a>
+					</h1>
+					<!-- /Post Title -->
+
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by">Published by <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></li>
+						<li class="comments"><a href="index.html#comments" title="Comment on How to improve the click-through-rate in your email newsletter">10 Comments</a></li>
+					</ul>
+					<!-- /Post Details -->
+<!--
+<script type="text/javascript" src="http://www.launchbit.com/js-az/launchbit.js"></script><div class="launchbitaz" launchbit_id="9505"></div> -->
+
+					<a id="dd_start"></a><p><img class="alignnone" title="Newsletterdirectory.co" src="../../../www.newsletterdirectory.co/images/bigenvelope.gif" alt="" width="252" height="247" /></p>
+<p>By Zach and Elizabeth</p>
+<p>This is part II of a 3 part series on stats and best practices for improving your <a title="What is a good open rate for your email newsletter?" href="../what-is-a-good-open-rate-for-your-email-newsletter/index.html" target="_blank">open rates</a>, <a title="What are good subscribe rates for email newsletters?" href="../what-are-good-subscribe-rates-for-email-newsletters/index.html" target="_blank">subscribe/unsubscribe rates</a>, and <a title="How to improve the click-through-rate in your email newsletter?" href="index.html" target="_blank">click-through-rates</a> in your email newsletters.</p>
+<p><strong>Click-through-rate on content positively correlates with open rate</strong></p>
+<p>According to <a title="Statwing" href="https://www.statwing.com/" target="_blank">Statwing</a> (which is an awesome stats tool!), there is a very high statistical significance of higher open rates being a predictor of higher click-through-rates on your newsletter content.</p>
+<p><a href="../wp-content/uploads/2012/11/open_click_content1.png"><img class="alignnone size-full wp-image-883" title="Open rate vs Click-through-rate" src="../wp-content/uploads/2012/11/open_click_content1.png" alt="Open rate vs Click-through-rate" width="519" height="313" /></a></p>
+<p>This is extremely intriguing.  In other words, if List A has 1000 people and a 30% open rate and List B has 2000 people and a 15% open rate, the net number of people opening an email is the same.  But, in terms of engagement, as measured by click-throughs, List A is definitely the better list.  Yet, the newsletter sponsorship and ad industry traditionally favors larger lists &#8212; they pay a premium for larger lists, regardless of the number of people actually engaging with the content!  More on this later.</p>
+<p>But, we found it difficult to predict with accuracy a newsletter&#8217;s click-through-rate given their open rate.  (Our linear regression had an R^2 = 0.6)  MailChimp, however, did a <a href="http://blog.mailchimp.com/what-good-marketers-can-learn-from-v1agr-spammers/" target="_blank">good study</a> that shows you can predict with some certainty a newsletter&#8217;s click-through-rate if you know the word count and number of images in the newsletter.  Basically, use fewer words and prominent links to create a strong level of &#8220;clickiness&#8221;.</p>
+<p><strong>Click-through-rate on text ads does not correlate with open rate in &#8220;regular&#8221; newsletters</strong></p>
+<p>If you are running ads in your newsletter, your advertisers, sponsors, or ad networks (such as <a href="../../index.html" target="_blank">LaunchBit</a>) will likely care about clicks and conversions.  (If you are looking for advertisers/sponsors for your newsletter, you should join <a href="http://www.newsletterdirectory.co/">newsletterdirectory.co</a>) It turns out that although click-through-rate on content correlates with a high open rate, the <strong>click-through-rate on text ads does not correlate with open rate</strong>.</p>
+<p><a href="../wp-content/uploads/2012/11/open_click_ads.png"><img class="alignnone size-full wp-image-893" title="Open rate vs click-through-rate on ads" src="../wp-content/uploads/2012/11/open_click_ads.png" alt="Open rate vs click-through-rate on ads" width="446" height="273" /></a></p>
+<p><strong>But, higher open rates in newsletter digests are strongly associated with higher click-through-rates on text ads</strong></p>
+<p>There is one exception &#8212; if you are running a newsletter digest, your click-through-rate on text ads *does* correlate with your open rate.</p>
+<p><a href="../wp-content/uploads/2012/11/open_click_ads_digest.png"><img class="alignnone size-full wp-image-1003" title="Open rate vs Click-through-rate on ads in digests" src="../wp-content/uploads/2012/11/open_click_ads_digest.png" alt="Open rate vs Click-through-rate on ads in digests" width="455" height="273" /></a></p>
+<p>Ok, what does this mean?  Our hunch is that newsletters have so many different layouts and styles &#8212; where you place an ad matters a lot in terms of its click-through-rate.  Two newsletters that do a 20% open rate could end up placing an ad in different locations in their respective email newsletters.  And, the click-through-rate on those ads would be different.</p>
+<p>But assuming there were a standard style &#8212; such as a digest format that has really taken off in the last year that looks like <a href="http://www.hackernewsletter.com/" target="_blank">Hacker Newsletter</a>, <a href="http://javascriptweekly.com/" target="_blank">Javascript Weekly</a>, and <a href="http://www.curatehub.com/archive/word-of-the-day/" target="_blank">Word of the Day</a>.  Since the ads are more or less in the same place on all these templates, we can say confidently that with this type of newsletter layout, click-through-rates on ads are correlated with open rate, similar to content links.  It also turns out that this style of newsletter on average has a significantly higher click-through-rate on ads than a non-digest email newsletter.</p>
+<p><a href="../wp-content/uploads/2012/11/digest_nondigest.png"><img class="alignnone size-full wp-image-1013" title="Digest ad CTR vs Non-digest ad CTR" src="../wp-content/uploads/2012/11/digest_nondigest.png" alt="Digest ad CTR vs Non-digest ad CTR" width="473" height="284" /></a></p>
+<p><strong>How do you improve your click-through-rate?</strong></p>
+<p>In short:</p>
+<ul>
+<li>Most importantly &#8212; improve your open rate</li>
+<li>Experiment with different layouts, including a digest style</li>
+</ul>
+<p>&nbsp;</p>
+<div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/" data-count="vertical" data-text="How to improve the click-through-rate in your email newsletter" data-via="Launchbit" ></a><script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-url="http://www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/" data-via="Launchbit"></a><script type="text/javascript" src="../../../static.bufferapp.com/js/button.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><script src="../../../connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="index.html" send="false" show_faces="false"  layout="box_count" width="50"  ></fb:like></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='index.html'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../platform.linkedin.com/in.js'></script><div class='dd-linkedin-share'><div data-url='http://www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/' data-counter='top'></div></div></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 60;var dd_top_offset_from_content = 0;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="../wp-content/plugins/digg-digg/js/diggdigg-floating-bar48f5.js?ver=5.3.6"></script>					
+					
+<div id="newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+			<p><a href="https://twitter.com/launchbit" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">follow @dynamick</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+				<!-- Begin MailChimp Signup Form -->
+	<form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name" required>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name" required>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" required>
+        <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+                <input type="hidden" value="postfooter" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+    <script type="text/javascript">
+ga('send','event','leadbox','postfooter-impression');
+</script>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div>
+
+					
+						
+					
+					
+					<section id="comments">
+	
+	
+
+		
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-21913">
+			<article id="div-comment-21913" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/27820b84289faefe4e2c549a22dd4b8c?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn"><a href='http://zeitreise-2030.de/sites/mediawiki/index.php5?title=Benutzer:DelorasCon' rel='external nofollow' class='url'>nhl jerseys baseball</a></cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-21913">
+			January 3, 2013 at 11:37 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Thanks for a marvelous posting! I actually enjoyed reading it,<br />
+you will be a great author.I will be sure to bookmark your blog and will come<br />
+back in the foreseeable future. I want to encourage you to ultimately continue your great job, have a nice weekend!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index49aa.html?replytocom=21913#respond' onclick='return addComment.moveForm("div-comment-21913", "21913", "respond", "863")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21953">
+			<article id="div-comment-21953" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/441db33dbe5bfb3f5a65ce0200f7bf67?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn"><a href='http://michael.camus2.free.fr/forum/privmsg.php?mode=post&amp;u=5893&amp;sid=c4d2d2216ef8de0b6033d5b0da0c3d0a' rel='external nofollow' class='url'>http://michael.camus2.free.fr</a></cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-21953">
+			January 8, 2013 at 11:27 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Way cool! Some extremely valid points! I appreciate you writing this post and the rest of<br />
+the site is also really good.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index0bc9.html?replytocom=21953#respond' onclick='return addComment.moveForm("div-comment-21953", "21953", "respond", "863")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment even thread-even depth-1" id="comment-481213">
+			<article id="div-comment-481213" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/7e1854644b1b75fe42f63e9720b1f14e?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Aruna</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-481213">
+			December 29, 2014 at 12:36 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>I need to know how to improve our click through rate, on an average our open rates are good but the CTR&#8217;s are not that good.  Also please let me know what do you mean by digest style.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexfd99.html?replytocom=481213#respond' onclick='return addComment.moveForm("div-comment-481213", "481213", "respond", "863")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-792543">
+			<article id="div-comment-792543" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/a0a95597a2d40dfe1874530570c6723a?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Mayank Singhal</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-792543">
+			September 28, 2016 at 5:45 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Thanks..great post!</p>
+<p>Would you have Click to open rates (CTOR) instead of click through rates (CTR)?<br />
+Also, do you agree with Statwing finding that there is a possiblity of 25% Click rate with 50% open rates?</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index0f77.html?replytocom=792543#respond' onclick='return addComment.moveForm("div-comment-792543", "792543", "respond", "863")'>Reply</a>	</div>
+			</article>
+	</li>
+	</ol>
+
+	
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply to <a href="#comment-481213">Aruna</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Cancel reply</a></small></h3>
+									<form action="http://www.launchbit.com/blog/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' placeholder = "How could we call you?" required/></p>
+<p class="comment-form-email"><label for="email">Email<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required='true' placeholder="How could we contact you?" required /></p>
+
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="What do you want ask me?"	></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='863' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='481213' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="15ec835e02" /></p><script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form6e0e.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="167"/></p>					</form>
+							</div><!-- #respond -->
+						
+</section> <!-- END: comments if not password protected -->
+				</div>
+			</article>
+			<!-- /Article -->
+
+		</div> <!-- </div class="main"> -->
+
+		
+		
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGBVfDAFcXQ==","queueTime":0,"applicationTime":129,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/how-to-improve-the-click-through-rate-in-your-email-newsletter/?replytocom=481213 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:42 GMT -->
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="us">
+
+<!-- Mirrored from www.launchbit.com/terms/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:00:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+    <script src="../launchbit-gateways/js/sb-user-jquery.js"></script>
+    <link href="../launchbit-gateways/signup_box/css/index2ffe.html?aid=1755" rel="stylesheet" />
+    <script src="../launchbit-gateways/lbgw_js/index2ffe.html?aid=1755"></script>
+
+    <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <title>Terms of Service | LaunchBit</title>
+    
+    <script type="text/javascript" src="../../use.typekit.net/rcf6jvo.js"></script>
+	<script type="text/javascript">
+        
+        try{Typekit.load();}catch(e){}
+        
+    </script>
+    <link rel="icon" href="../images/rocket.png" type="image/png" />
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31127242-1', 'launchbit.com');
+    ga('send', 'pageview');
+</script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../general/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <link href="../general/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    
+    <link rel="stylesheet" href="../general/css/font-awesome.min.css">
+    
+    <link href="../general/css/general.css" rel="stylesheet" media="screen">
+    
+
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    
+
+</head>
+<body>
+
+<!--do not remove: lead generation -->
+<!--Navbar -->
+<div class="navbar navbar-default" id="main-nav">
+  <div class="container">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html"><img src="../general/images/header-logo.png" alt="LaunchBit"></a>
+    <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="../resources/index.html">Resources</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li class="active"><a href="../about/index.html">About</a></li>
+        <li><a href="../log-in/index.html">Log In</a></li>
+       </ul>
+          </div>
+  </div>
+</div>
+<!-- End navbar -->
+
+<div id="main_content"><!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="text-center">LaunchBit Terms of Service</h2>
+                <p class="text-center"><small>This LaunchBit Terms of Service is effective February 1, 2012. Last modified: February 11, 2013</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Jumbotron -->
+
+<!--Terms -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3>Welcome to LaunchBit and its affiliates, including NewsletterDirectory!</h3>
+                <p>Thanks for using our products and services (“Services”). The Services are provided by LaunchBit Inc. (“LaunchBit”), located at 745 Atlantic Ave., Boston, MA 02111.  When these terms of service refer to “we” or “us” or “our” it means LaunchBit and/or its affiliates, including NewsletterDirectory.</p>
+
+                <p>By using our Services, you are agreeing to these terms. Please read them carefully. By selecting the correct box at the end of this Agreement and typing “I Agree” or otherwise signifying your acceptance, you accept this Agreement either for yourself or on behalf of your employer or the entity that is identified as the account holder, and agree to be bound by its provisions. If you are accepting on behalf of your employer or the entity that is the account holder, you represent and warrant that you have full legal authority to bind your employer or such other entity. If you do not have such authority or you do not accept or agree with these terms, do not accept this Agreement. </p>
+
+                <h3>Using our Services</h3>
+                <p>You must follow the policies made available to you within the Services.</p>
+
+                <p>Don’t misuse our Services. For example, don’t interfere with our Services or try to access them using a method other than the interface and the instructions that we provide. You may use our Services only as permitted by law, including applicable export and re-export control laws and regulations. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.</p>
+
+                <p> Using our Services does not give you ownership of any intellectual property rights in our Services or the content you access. You may not use content from our Services unless you obtain permission from its owner or are otherwise permitted by law. These terms do not grant you the right to use any branding or logos used in our Services. Don’t remove, obscure, or alter any legal notices displayed in or along with our Services.</p>
+
+                <p>Our Service integrates your advertisement (“Your Content”) with content provided by others (“Publisher’s Content”), that is not our content. We will match Your Content with the Publisher’s Content, selected by us at our sole discretion, based upon criterion you provided, and the category for the Publisher’s Content that the Publisher has selected for integration therewith. The Publisher or its designee, however, has the ultimate authority to decide whether or not to accept Your Content for integration with the Publisher Content, and the manner of integration. The Publisher’s Content is the sole responsibility of the entity that makes it available. We may review Your Content to determine whether it is illegal or violates our policies, and we may remove or refuse to display Your Content that we reasonably believe violates our policies or the law. But that does not necessarily mean that we review Your Content, so please don’t assume that we do. Similarly, we do not necessarily review all Publisher’s Content to which Your Content may be offered to be integrated. So please do not expect us to have reviewed all Publisher’s Content to which we offer Your Content for integration.</p>
+
+                <p>We may use third party services to help us match Your Content with the Publisher's Content.  Services such as <a href="http://www.maxmind.com/">http://www.maxmind.com</a> for GeoLite data by MaxMind.</p>
+
+                <h3>Payment For Our Services</h3>
+                <p>You will be charged for the advertisements placed, based upon the amount agreed to with us, before the commencement of the advertisement campaign or based upon an agreed to metrics, such as CPC or CPM, times the number of ads placed.  If the amount is based upon an agreed to metrics, you further agree to provide a weekly estimated budget for the ad campaign. We will attempt to meet that weekly estimated budget. However, we cannot assure you that we will not go over that budget (over delivery) in any week. In the event of over delivery, we will under deliver your ads in a subsequent week to compensate for the over-delivery.</p>
+
+                <p>You agree to pre-pay the full amount for the anticipated advertisement campaign using our Services prior to the commencement of the campaign, based upon either the amount agreed to or the metrics agreed to and the anticipated budget for the ad campaign. </p>
+
+                <p>You may pay for the Services using a credit card or other banking or financial account. We do not store information regarding the account information for your credit card or banking or financial account, once we have processed the transaction. However, for your convenience, we have arranged with a third party to store your credit card account information or other banking or financial account information for any subsequent purchases for our Services. You agree that neither we nor our parents, subsidiaries and affiliates and respective directors, officers and employees, shall have any liability, damages or expenses, arising out of or in connection with or as a result of any actual or threatened lawsuit, claim or legal proceeding based upon any claim that is the result of the third party’s storage of such information.</p>
+
+                <p>If the agreed amount is based upon some metrics, you will be charged for the advertisements placed, based upon the agreed to metrics, such as CPC or CPM, and the number of ads so placed. The amount charged will be deducted from the pre-paid amount.</p>
+
+                <p>Alternatively, if you and the publisher, using our platform, reach agreement on the amount due for a particular advertisement campaign, you will pay us the full agreed to amount. We will remit the amount to the publisher less a certain percentage that we agree with the publisher for the use of our platform by you and the publisher.</p>
+
+                <h3>Your Account</h3>
+                <p>You will need an account from us (Account) in order to use our Services. You may create your own Account, or your Account may be assigned to you by an administrator, such as your employer. If you are using an Account assigned to you by an administrator, different or additional terms may apply and your administrator may be able to access or disable your Account.</p>
+
+                <h3>Your Content in Our Services</h3>
+                <p>Our Services allow you to submit Your Content to be embedded in the Publisher’s Content. You retain ownership of any intellectual property rights that you hold in Your Content. In short, what you created and belongs to you stays yours.</p>
+
+                <p>When you upload or otherwise submit Your Content to our Services, you give us (and those we work with) a worldwide license to use, host, store, reproduce, modify, create derivative works (such as those resulting from translations, adaptations or other changes we make so that Your Content works better with our Services), communicate, publish, publicly perform, publicly display and distribute such content. The rights you grant in this license are for the limited purpose of operating, promoting, and improving our Services, and to develop new ones. You also agree that we may use your trademark or logo on our website or other locations, for the limited purpose of providing notice to our publishers of the availability of advertisements from you to be inserted in their publications.</p>
+
+                <p>We rely on you to have all necessary rights to Your Content that you give us the worldwide license described above. Make sure you have the necessary rights to grant us this license for Your Content that you submit to our Services. You also represent and warrant that Your Content (i) does not infringe or violate any copyright, patent, trademarks, trade secret, or other proprietary right or right of publicity or privacy; (ii) does not violate any applicable law, statute, ordinance or regulation; (iii) will not be defamatory or libelous; (iv) will not be lewd, pornographic, obscene or purposely offensive toward one person or specific group of persons; (v) does not promote violence or contain hate speech; or (vi) does not contain viruses, Trojan horses, worms, time bombs, malware, cancelbots or other similarly harmful or deleterious programming routines. You agree to defend, indemnify and hold us and our  parents, subsidiaries and affiliates and respective directors, officers and employees, their suppliers, distributors, and publishers, from all damages, liabilities and expenses (including reasonable outside legal fees), arising out of, in connection with or resulting from any actual or threatened lawsuit, claim or legal proceeding based upon any claim that is a breach of the license granted and the warranty and representation made herein.</p>
+
+                <p>We respond to notices of alleged copyright infringement and terminate accounts of repeat infringers according to the process set out in the U.S. Digital Millennium Copyright. </p>
+
+                <h3>Modifying and Terminating our Services</h3>
+                <p>We are constantly changing and improving our Services. We may add or remove functionalities or features, and we may suspend or stop a Service altogether.  You can stop using our Services at any time, although we’ll be sorry to see you go. We may also stop providing Services to you, or add or create new limits to our Services at any time.</p>
+
+                <h3>Our Warranties and Disclaimers</h3>
+                <p>We provide our Services using a commercially reasonable level of skill and care and we hope that you will enjoy using them. But there are certain things that we don’t promise about our Services.</p>
+
+                <p>OTHER THAN AS EXPRESSLY SET OUT IN THESE TERMS OR ADDITIONAL TERMS, NEITHER US NOR OUR SUPPLIERS OR DISTRIBUTORS OR PUBLISHERS MAKE ANY SPECIFIC PROMISES ABOUT THE SERVICES. FOR EXAMPLE, WE DON’T MAKE ANY COMMITMENTS ABOUT THE CONTENT WITHIN THE SERVICES, THE SPECIFIC FUNCTION OF THE SERVICES, OR THEIR RELIABILITY, AVAILABILITY, OR ABILITY TO MEET YOUR NEEDS. WE PROVIDE THE SERVICES “AS IS” WITHOUT REPRESENTATION, WARRANTY OR CONDITION OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED REPRESENTATIONS, WARRANTIES OR CONDITIONS OF MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. WE EXCLUDE ALL WARRANTIES. WE DO NOT REPRESENT OR WARRANT THAT THE SERVICE WILL MEET YOUR REQUIREMENTS OR THAT ITS USE WILL BE UNINTERRUPTED OR ERROR FREE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SERVICE IS WITH YOU.</p>
+                <h3>Liability for our Services</h3>
+                <p>WHEN PERMITTED BY LAW, WE AND OUR SUPPLIERS, DISTRIBUTORS AND PUBLISHERS, WILL NOT BE RESPONSIBLE FOR LOST PROFITS, REVENUES, OR DATA, FINANCIAL LOSSES OR INDIRECT, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES.</p>
+                <p>TO THE EXTENT PERMITTED BY LAW, THE TOTAL LIABILITY OF US AND OUR SUPPLIERS, DISTRIBUTORS AND PUBLISHERS, FOR ANY CLAIM UNDER THESE TERMS, INCLUDING FOR ANY IMPLIED WARRANTIES, IS LIMITED TO THE AMOUNT YOU ARE CHARGED TO USE THE SERVICES (OR, IF WE CHOOSE, TO SUPPLYING YOU THE SERVICES AGAIN).</p>
+                <p>IN ALL CASES, WE, AND OUR SUPPLIERS, DISTRIBUTORS AND PUBLISHERS, WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE THAT IS NOT REASONABLY FORESEEABLE.</p>
+
+                <h3>Business uses of our Services</h3>
+                <p>If you are using our Services on behalf of a business, that business accepts these terms. It will hold harmless and indemnify us and our affiliates, officers, agents, and employees from any claim, suit or action arising from or related to the use of the Services or violation of these terms, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.</p>
+
+                <h3>About these Terms</h3>
+                <p>We may modify these terms or any additional terms that apply to a Service to, for example, reflect changes to the law or changes to our Services. You should look at the terms regularly. We’ll post notice of modifications to these terms on this page.  Changes will not apply retroactively and will become effective no sooner than ten (10) days after they are posted. However, changes addressing new functions for a Service or changes made for legal reasons will be effective immediately. If you do not agree to the modified terms for a Service, you should discontinue your use of that Service.</p>
+                <p> If there is a conflict between these terms and the additional terms, the additional terms will control for that conflict. </p>
+                <p> These terms control the relationship between us and you. They do not create any third party beneficiary rights.</p>
+                <p>If you do not comply with these terms, and we don’t take action right away, this doesn’t mean that we are giving up any rights that we may have (such as taking action in the future).</p>
+                <p> If it turns out that a particular term is not enforceable, this will not affect any other terms. </p>
+                <p>The laws of California, U.S.A., excluding California’s conflict of laws rules, will apply to any disputes arising out of or relating to these terms or the Services. All claims arising out of or relating to these terms or the Services will be litigated exclusively in the federal or state courts of Santa Clara County, California, USA, and you and us consent to personal jurisdiction in those courts. </p>
+                <p> Email us at hello [at] launchbit [dot] com for additional information related to LaunchBit; hello [at] newsletterdirectory [dot] co for additional information related to NewsletterDirectory.</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End Terms--></div>
+
+    <!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="../general/images/footer-logo.png" alt="launchbit">
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>Resources</li>
+                    <li><a href="../resources/index.html">Case Studies</a></li>
+                    <li><a href="../resources/index.html#sectionwebinars">Webinars</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>About LaunchBit</li>
+                    <li><a href="../about/index.html">Our Story</a></li>
+                    <li><a href="../about/index.html#sectionteam">The Team</a></li>
+                    <li><a href="../about/index.html#sectionpress">Press</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="index.html">Terms of Service</a></li>
+                    <li><a href="../privacy/index.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                <li>Contact Us</li>
+                <li>hello@launchbit.com</li>
+                <li>
+                    <a href="https://twitter.com/launchbit"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-10">
+            <p class="text-right">© 2010-2014 LaunchBit, Inc.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../general/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XMxRRHVIGWQNEAwofSA4WF0ZQEVoVGBIOQA==","queueTime":0,"applicationTime":57,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/terms/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:00:06 GMT -->
+</html>

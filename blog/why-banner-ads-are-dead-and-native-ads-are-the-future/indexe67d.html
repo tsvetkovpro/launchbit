@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/?replytocom=603032 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>Why banner ads are dead and native ads are the future - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="index.html" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@launchbit"/>
+<meta name="twitter:domain" content="LaunchBit"/>
+<meta name="twitter:creator" content="@launchbit"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/04/rise1-250x218.jpg"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/04/fall1-250x173.jpg"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/04/resurrection1.jpg"/>
+<meta name="twitter:image:src" content="http://www.launchbit.com/blog/wp-content/uploads/2013/04/epiphany1.jpg"/>
+<meta name="twitter:description" content="By Tim and Elizabeth
+The Rise
+Native ads are all the rage these days, seamlessly blending engaging content into the property&#8217;s environment. But to really understand why, we need to take a look at the history of online advertising.  In the 90s, when the dot com boom was starting to take off, I was just entering high school in the Silicon Valley and I had the opportunity to briefly help (if you can call it that) at a banner ad company.  They were rocking it, seeing very high click-through-rates (CTR) and charging just pennies per click.  Back then, everyone and their mother was clicking, so even at just pennies, this company was rolling in the dough.&hellip; Read the rest"/>
+<meta name="twitter:title" content="Why banner ads are dead and native ads are the future - LaunchBit"/>
+<meta name="twitter:url" content="http://www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Why banner ads are dead and native ads are the future Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply5589.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='../indexd155.html?p=4413' />
+      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+		<meta property="og:title" content="Why banner ads are dead and native ads are the future"/>
+		<meta property="og:description" content="By Tim and Elizabeth
+The Rise
+Native ads are all the rage these days, seamlessly blending engaging content into the property&#8217;s environment. But to really understand why, we need to take a look at the history of online advertising.  In the 90s, when the dot com boom was starting to take off, I was just entering high school in the Silicon Valley and I had the opportunity to briefly help (if you can call it that) at a banner ad company.  They were rocking it, seeing very high click-through-rates (CTR) and charging just pennies per click.  Back then, everyone and their mother was clicking, so even at just pennies, this company was rolling in the dough.&hellip; Read the rest" />
+		<meta property="og:url" content="http://www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/"/>
+						<meta property="og:type" content="article"
+		/>
+		<meta property="og:site_name" content="LaunchBit"/>
+		<!-- End Open Graph Meta Tags !-->
+
+    <script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="single single-post postid-4413 single-format-standard custom-background why-banner-ads-are-dead-and-native-ads-are-the-future">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+	
+		<div class="main">
+
+			<!-- Article -->
+			<article id="post-4413" class="post-4413 post type-post status-publish format-standard hentry category-advertising category-email-marketing tag-advertising tag-best-practices tag-click-through-rate tag-email-marketing tag-online-marketing post_content">
+
+				<div class="inner">
+
+					<nav><ul class="breadcrumb"><li><a href="../../blog.html">Home</a> <span class="divider">/</span> </li><li><a href="../category/advertising/index.html" title="View all posts in advertising">advertising</a> <span class="divider">/</span> </li><li class="active">Why banner ads are dead and native ads are the future</li></ul></nav>
+					<div class="prefix"></div>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="index.html" title="Why banner ads are dead and native ads are the future">Why banner ads are dead and native ads are the future</a>
+					</h1>
+					<!-- /Post Title -->
+
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by">Published by <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></li>
+						<li class="comments"><a href="index.html#comments" title="Comment on Why banner ads are dead and native ads are the future">18 Comments</a></li>
+					</ul>
+					<!-- /Post Details -->
+<!--
+<script type="text/javascript" src="http://www.launchbit.com/js-az/launchbit.js"></script><div class="launchbitaz" launchbit_id="9505"></div> -->
+
+					<a id="dd_start"></a><p dir="ltr">By Tim and Elizabeth</p>
+<p dir="ltr"><strong><span style="font-size: 1.5em; line-height: 19px;">The Rise</span></strong></p>
+<p>Native ads are all the rage these days, seamlessly blending engaging content into the property&#8217;s environment. But to really understand why, we need to take a look at the history of online advertising.  In the 90s, when the dot com boom was starting to take off, I was just entering high school in the Silicon Valley and I had the opportunity to briefly help (if you can call it that) at a banner ad company.  They were rocking it, seeing very high click-through-rates (CTR) and charging just pennies per click.  Back then, everyone and their mother was clicking, so even at just pennies, this company was rolling in the dough.  They later sold for hundreds of millions of dollars before the dot com bust in the early 2000s.</p>
+<p><a href="../wp-content/uploads/2013/04/rise1.jpg"><img class="alignleft  wp-image-4421" style="margin-top: 15px; margin-bottom: 15px; margin-right: 15px;" title="rise" src="../wp-content/uploads/2013/04/rise1-250x218.jpg" alt="" width="125" height="109" /></a> But they weren&#8217;t the only ones raking it in.  <a href="http://andrewchen.co/2012/04/05/the-law-of-shitty-clickthroughs/">Just about every banner ad company was doing the same</a>.  Banner ads were seeing anywhere between 50-90% CTR!  It was an insane time!  As a result, the effective CPMs were also very high. For example, let’s say you ran a website with a 70% CTR on one banner ad and only made $0.05 per click. For every 1000 visitors, you were still making 1000 * 70% * $0.05 = $35 eCPMs!</p>
+<h2>The Fall</h2>
+<p><a href="../wp-content/uploads/2013/04/fall1.jpg"><img class="alignright  wp-image-4422" title="fall" src="../wp-content/uploads/2013/04/fall1-250x173.jpg" alt="" width="125" height="86" /></a>Fast forward to today.  The CTR on banner ads has plummeted to about 0.1%.  So your eCPM is now 5 cents instead of $35! Advertisers are getting way fewer clicks and publishers are hardly making any money at all.  Why?  Consumers have <a href="http://www.nngroup.com/articles/banner-blindness-old-and-new-findings/">banner-blindness</a>.   Banner ads are now standardized, so they look the same on every single site.  It makes it easy to ignore ads even if they are relevant and well-targeted.</p>
+<h2>The Resurrection</h2>
+<p><a href="../wp-content/uploads/2013/04/resurrection1.jpg"><img class="alignleft size-full wp-image-4423" style="margin-top: 40px; margin-bottom: 40px; margin-right: 15px;" title="resurrection" src="../wp-content/uploads/2013/04/resurrection1.jpg" alt="" width="106" height="191" /></a>We see banner-blindness in our own network since we offer both banner and text ads.  The latter looks native to the look and feel of a given newsletter, while the former is a traditional banner ad format.  In our controlled studies, time and again, the text ads will always win doing 2-10x greater CTR than banner ads.  Think about it &#8212; an order of magnitude difference in CTR is an order of magnitude difference in revenue.  In other words, instead of making $10 with banner ads, you could be making $100.  At first, this difference astounded me, but now it seems obvious.  Native ads have high CTRs for a couple of reasons:</p>
+<p><span>1) They look like they fit the content.  Since users are actively reading the content, they are more likely to read the ad.  </span></p>
+<p><span>2) The look-and-feel required to be a native ad will differ from property to property, so users are not able to learn to ignore ads.</span><span><br />
+</span></p>
+<h2>The Epiphany</h2>
+<p><a href="../wp-content/uploads/2013/04/epiphany1.jpg"><img class="alignright  wp-image-4424" title="epiphany" src="../wp-content/uploads/2013/04/epiphany1.jpg" alt="" width="82" height="248" /></a>Advertisers get more engagement with native ads compared to banner ads on an eCPM basis. If you are a publisher and can choose your ad format, it’s a no-brainer to run native ads.  Since they are more effective, advertisers should also be willing to pay more for these on an eCPM basis.  Everyday, we hear about online newspaper companies struggling, because banner ads are just not paying them enough to make their business model work.  By adopting native ads, media companies should be able to increase their revenue by an order of magnitude, and advertisers will pay for this, because it works better than banner ads.</p>
+<p>Get ready for a new world. There&#8217;s a new way to get customers now, and everyone &#8212; marketers, agencies, ad exchanges and networks &#8212; will need to be prepared for this big change.  Have questions or thoughts about what this new world will look like?  Type them below.</p>
+<div></div>
+<div>
+<p><small><em>Image used with permission from Microsoft</em></small></p>
+</div>
+<div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/" data-count="vertical" data-text="Why banner ads are dead and native ads are the future" data-via="Launchbit" ></a><script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-url="http://www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/" data-via="Launchbit"></a><script type="text/javascript" src="../../../static.bufferapp.com/js/button.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><script src="../../../connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="index.html" send="false" show_faces="false"  layout="box_count" width="50"  ></fb:like></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='index.html'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../platform.linkedin.com/in.js'></script><div class='dd-linkedin-share'><div data-url='http://www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/' data-counter='top'></div></div></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 60;var dd_top_offset_from_content = 0;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="../wp-content/plugins/digg-digg/js/diggdigg-floating-bar48f5.js?ver=5.3.6"></script>					
+					
+<div id="newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+			<p><a href="https://twitter.com/launchbit" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">follow @dynamick</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+				<!-- Begin MailChimp Signup Form -->
+	<form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name" required>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name" required>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" required>
+        <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+                <input type="hidden" value="postfooter" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+    <script type="text/javascript">
+ga('send','event','leadbox','postfooter-impression');
+</script>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div>
+
+					
+						
+					
+					
+					<section id="comments">
+	
+	
+
+		
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1 parent" id="comment-30558">
+			<article id="div-comment-30558" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/7bb7d886fe960929eb5a704e886d580c?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Owen McGab Enaohwo</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30558">
+			July 12, 2013 at 11:28 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Personally I see Native Advertisement as a means to scale the promotion on ones content marketing efforts. What is the point of writing a great content for your business blog and only promoting it once manually after it has just been made live on the blog?</p>
+<p>What if once places it into several of the Native Advertisement platforms and pay per click. This will be promotion at scale.</p>
+<p>The caveat is the your blog posts each have to have a call to action to get folks on your email list so that you can marketing to them via email or sign up for a free trial or something.</p>
+<p>So far these are the Native Advertisement platforms I have come across:</p>
+<p>Outbrain<br />
+Zemanta<br />
+Taboola<br />
+Onespot<br />
+Gravity<br />
+Nrelate<br />
+SocialReactor<br />
+Adroll<br />
+ShareThrough<br />
+Virurl<br />
+ThoughtLeadr</p>
+<p>Elizabeth which other notable ones are not in my list?</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexc41b.html?replytocom=30558#respond' onclick='return addComment.moveForm("div-comment-30558", "30558", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2 parent" id="comment-30566">
+			<article id="div-comment-30566" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30566">
+			July 16, 2013 at 10:48 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Hi Owen, </p>
+<p>Good point.  I think native ads are still quite nascent that different people have different definitions of what &#8220;native&#8221; means.  But, in my book, I think it basically just means that it looks like it belongs/fits into the medium.  </p>
+<p>Additional networks are Buzzfeed and Nativo.  But, I think it&#8217;s still very new.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index3ea5.html?replytocom=30566#respond' onclick='return addComment.moveForm("div-comment-30566", "30566", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment even depth-3" id="comment-779223">
+			<article id="div-comment-779223" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/0efdfbfff42b7b6a042a50ef24007e4b?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Nobuyuki</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-779223">
+			February 18, 2016 at 8:48 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>nia, this is something we can all rtlaee to. There isn&#8217;t enough tme to read and respond to everyone, and the more comments and followers you get, the harder to keep up. So don&#8217;t worry about it, just keep it fun.I&#8217;ve had to pull back a bit because it became too much to keep up with all my favorites, so i stopped the mails and just come in and scroll down the reading list and stop by one or two blogs to catch up on what they are doing, like now with you. Sometimes I will just scroll down the front page of a favorite blogger, reading or looking at pictures and enjoying several days worth of posts, while only leaving a few likes or comments.So don&#8217;t feel bad. No one can keep up with everyone all the time. But it&#8217;s always nice to see you when you do stop by, just know that you are appreciated, but not expected to do the impossible. ((hugs))</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index42d4.html?replytocom=779223#respond' onclick='return addComment.moveForm("div-comment-779223", "779223", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+</ul>
+</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-30559">
+			<article id="div-comment-30559" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/3dc4adee7b9abcb82afcc0b796cfcd27?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">John</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30559">
+			July 12, 2013 at 1:09 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Your article is good, but relies on one key assumption that is not necessarily true ! Not all Ad campaigns are run for click throughs !!! The core objective of many ad campaigns is brand lift, and CRT isn&#8217;t an effective measurement &#8211; audience panel testing is! Sorry, but broad brush &amp; incorrect statements don&#8217;t help our industry develop!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index1beb.html?replytocom=30559#respond' onclick='return addComment.moveForm("div-comment-30559", "30559", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2 parent" id="comment-30567">
+			<article id="div-comment-30567" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/079829a70de288ba0cccb9fe854dc68f?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Elizabeth Yin</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30567">
+			July 16, 2013 at 10:51 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Hi John, </p>
+<p>You&#8217;re right that advertisers will differ a lot in what they want.  There are brand advertisers.  There are performance advertisers.  And, each advertiser will want different things.  But the vast majority of advertisers would like engagement of some sort (sales, clicks, interactions, etc). And, if people are completely ignoring banner ads, that&#8217;s not engagement in any form&#8230;</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexaa91.html?replytocom=30567#respond' onclick='return addComment.moveForm("div-comment-30567", "30567", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	<ul class='children'>
+	<li class="comment odd alt depth-3" id="comment-30717">
+			<article id="div-comment-30717" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/367704a71d116c09045733cf981f9b6f?s=180&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Steve B</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-30717">
+			October 11, 2013 at 12:34 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>I agree. Blindness means that the user isn&#8217;t even looking at the banner, which means branding doesn&#8217;t even come into play.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexe484.html?replytocom=30717#respond' onclick='return addComment.moveForm("div-comment-30717", "30717", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+</ul>
+</li>
+</ul>
+</li>
+	<li class="comment even thread-even depth-1" id="comment-37101">
+			<article id="div-comment-37101" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/6266e8c6d47dc9af800142b16059e6c7?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Joe B</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-37101">
+			April 17, 2014 at 1:54 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>We have stopped automatically judging our display ad performance by solely click through rates. For us, we find it more insightful to review our campaigns success by cost per sale. Whilst not particularly relevant to brand marketers just looking for exposure, we have found that a quality scent trail and a custom and carefully considered landing page can still have a sales conversion rate that proves the worth of display advertising. We have detailed our own views on succeeding with DA&#8217;s here, so if you guys fancy it, take a look. <a href="http://www.zeta.net/display-ads-arent-dead-learn-how-to-succeed-with-your-display-campaigns/" rel="nofollow">http://www.zeta.net/display-ads-arent-dead-learn-how-to-succeed-with-your-display-campaigns/</a></p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexd31d.html?replytocom=37101#respond' onclick='return addComment.moveForm("div-comment-37101", "37101", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-572271">
+			<article id="div-comment-572271" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/6b4142b89c648c21242775dd228fcc20?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn"><a href='http://www.banner2click.com/' rel='external nofollow' class='url'>Jackqueline</a></cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-572271">
+			March 14, 2015 at 11:35 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Great, thanks.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='index6f99.html?replytocom=572271#respond' onclick='return addComment.moveForm("div-comment-572271", "572271", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment even thread-even depth-1" id="comment-603032">
+			<article id="div-comment-603032" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/60858b4cea890976b5fb630183ed85fb?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">DK</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-603032">
+			April 8, 2015 at 9:30 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>The problem is the so called &#8220;native ads&#8221; are just another gimmick. People learned to ignore banners, and then learned to ignore adword type text ads, and they will learn to ignore native ads as well. I&#8217;ve seen examples of Outbrain native ads on cnn &#8211; and most of the links are junk that looks like it should be interesting content and fools you, but once you get to the site you quickly leave it. Once fooled once, you avoid such gimmicks in the future.<br />
+The only thing that people are looking for is real content, not advertising and biased material &#8211; so just like banner ads this idea will fail.</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexe67d.html?replytocom=603032#respond' onclick='return addComment.moveForm("div-comment-603032", "603032", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-775013">
+			<article id="div-comment-775013" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/445d0a953390ab2377f80782d15e86f0?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Joe</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-775013">
+			January 11, 2016 at 6:16 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Is social reactor dead?</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexed94.html?replytocom=775013#respond' onclick='return addComment.moveForm("div-comment-775013", "775013", "respond", "4413")'>Reply</a>	</div>
+			</article>
+	</li>
+	</ol>
+
+	
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply to <a href="#comment-603032">DK</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Cancel reply</a></small></h3>
+									<form action="http://www.launchbit.com/blog/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' placeholder = "How could we call you?" required/></p>
+<p class="comment-form-email"><label for="email">Email<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required='true' placeholder="How could we contact you?" required /></p>
+
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="What do you want ask me?"	></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='4413' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='603032' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c029f656a1" /></p><script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form6e0e.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="100"/></p>					</form>
+							</div><!-- #respond -->
+						
+</section> <!-- END: comments if not password protected -->
+				</div>
+			</article>
+			<!-- /Article -->
+
+		</div> <!-- </div class="main"> -->
+
+		
+		
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGBVfDAFcXQ==","queueTime":0,"applicationTime":134,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/why-banner-ads-are-dead-and-native-ads-are-the-future/?replytocom=603032 by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:31:36 GMT -->
+</html>

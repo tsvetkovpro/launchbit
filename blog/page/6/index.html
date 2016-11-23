@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/page/6/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:12:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>LaunchBit - Page 6 of 19 - Customer acquisition for SaaS companies : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="index.html" />
+<link rel="prev" href="../5/index.html" />
+<link rel="next" href="../7/index.html" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="home paged custom-background paged-6">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+		
+		<div class="main">
+<!--- header image leadbox --->
+<div style="width:770px;height:245px;background-image:url('../../../taz-i/header-lead.png');margin-top:-17px;">
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" name="mc-embedded-subscribe-form" class="validate" novalidate style="width:220px;margin-left:485px;padding-top:45px;">
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="header" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" class="btn btn-info" style="margin-top:10px;width:220px;"></center>
+            </form>
+            <!--End mc_embed_signup-->
+            </div>
+            <script type="text/javascript">
+ga('send','event','leadbox','header-impression');
+</script>
+<!--- end header image leadbox --->
+			
+	<!-- Article -->
+	
+	<article id="post-5374" class="post-5374 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../saas-companies-do-you-want-to-acquire-more-customers/index.html" title="SaaS companies, do you want to acquire more customers?">SaaS companies, do you want to acquire more customers?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p dir="ltr">LaunchBit recently partnered with customer analytics expert, KISSmetrics to do a webinar that helped SaaS companies with their customer acquisition tactics. Here are some key takeaways.</p>
+<p><strong>SaaS customer acquisition is HARD</strong></p>
+<p dir="ltr">In SaaS, you can’t really do ‘hacky’ things like import email address books and have your friends share them. Tactics like that either don’t work or they’re unprofessional. If B2B marketers want quality leads, they have to put in the work. Figuring out how each of your segments actually works is difficult – which channels they come from, what their pricing points are, etc. On top of that, figuring out your customers’ lifetime values takes longer than you think.&hellip; <a href="../../saas-companies-do-you-want-to-acquire-more-customers/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5351" class="post-5351 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../your-weekly-roundup-of-online-advertising-2/index.html" title="Your Weekly Roundup of Online Advertising">Your Weekly Roundup of Online Advertising</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>Your weekly roundup of online advertising posts brought to you by the LaunchBit B2B Advertising Network has arrived.</p>
+<p>&nbsp;</p>
+<p>Strategy vs. Tactics. Does Your Digital Marketer Really Know the Difference?</p>
+<p><a href="../../wp-content/uploads/2014/01/round-up-whats-the-big-campaign-idea.jpg"><img class="wp-image-5352 alignleft" title="EPSON scanner image" src="../../wp-content/uploads/2014/01/round-up-whats-the-big-campaign-idea.jpg" alt="" width="242" height="174" /></a>Recently I’ve been doing a number of audits for prospective clients, surveying their presence on the search and social web, how they are “known” and taking inventory of digital assets and the overall experience across their owned, earned, paid and shared media.</p>
+<p><a href="http://www.toprankblog.com/2014/01/digital-marketing-strategy-vs-tactics/">Read the full article…</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>What Really Makes People Click?</p>
+<p><a href="../../wp-content/uploads/2014/01/round-up-makes-ppl-click.jpg"><img class="alignleft  wp-image-5359" title="round up makes ppl click" src="../../wp-content/uploads/2014/01/round-up-makes-ppl-click-305x206.jpg" alt="" width="244" height="165" /></a>Professionals in direct <a href="http://www.inc.com/marketing" target="_blank" data-ls-seen="1">marketing</a> have spent years testing headlines against each other, trying to find the perfect formulation that will catch consumers&#8217; eyes.&hellip; <a href="../../your-weekly-roundup-of-online-advertising-2/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5341" class="post-5341 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../how-to-test-customer-acquisition-channels-for-volume/index.html" title="How to test customer acquisition channels for volume">How to test customer acquisition channels for volume</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>This article is a follow-on to <a href="../../how-to-test-customer-acquisition-channels-for-value/index.html">How to Test Customer Acquisition Channels for Value</a></p>
+<p>After you’ve tested a customer acquisition channel for performance, you’ll also want to test the channel for growth potential.</p>
+<p><a href="../../wp-content/uploads/2014/01/growth1.jpg"><img class="alignnone size-full wp-image-5347" title="Image credit: www.theapphome.com" src="../../wp-content/uploads/2014/01/growth1.jpg" alt="" width="504" height="344" /></a></p>
+<p>Here is a 4 step process to testing for growth:</p>
+<p><strong>1) Decide on your overall marketing growth goal</strong></p>
+<p>You’ll first need to determine your overall company growth goal. Let’s say your company has 1000 customers and is looking to get on a trajectory to grow 20% month over month. This means that you’re aiming to add an additional 200 customers initially.</p>
+<p><strong>2) Decide how many new customer acquisition channels your marketing team can test</strong></p>
+<p>Depending on your marketing team’s bandwidth, they’ll be an upper bound to the number of new customer acquisition channels you’ll be able to test.&hellip; <a href="../../how-to-test-customer-acquisition-channels-for-volume/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5333" class="post-5333 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../how-to-test-customer-acquisition-channels-for-value/index.html" title="How to test customer acquisition channels for value">How to test customer acquisition channels for value</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p><img class="alignnone" src="../../../../farm4.staticflickr.com/3728/9003220372_410b252dbd.jpg" alt="" width="500" height="375" /></p>
+<p><em>image credit: <a href="http://www.flickr.com/photos/fanofretail/9003220372/sizes/m/">Nicholas Eckhart</a></em></p>
+<p>A lot of SaaS marketers constantly test customer acquisition channels, but do they have a systematic process for testing?</p>
+<p>Our most successful advertisers test new channels for 2 criteria:</p>
+<ul>
+<li>Ability to hit performance goals</li>
+<li>Ability to sustain those performance goals over a certain volume</li>
+</ul>
+<p>This post focuses solely on to test channels on performance. My next post will discuss how to test to see if those channels can ramp up to sufficient volume.</p>
+<p>Hitting performance goals is obviously important. Performance marketers are looking for sales, but typically in SaaS, it’s difficult to get a sale right away.&hellip; <a href="../../how-to-test-customer-acquisition-channels-for-value/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5321" class="post-5321 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../what-are-high-purchase-intent-channels/index.html" title="What are high purchase intent channels?">What are high purchase intent channels?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth Yin</p>
+<p>SaaS marketers often use the same destination URL for all their customer acquisition channels.  Commonly, this URL is their homepage, and marketers have the expectation that potential customers will arrive at the page and start the free package of their software immediately.</p>
+<p style="text-align: center;"><a href="../../wp-content/uploads/2014/01/Mistakes.jpg"><img class="wp-image-5323 aligncenter" title="Image credit: likeable.com" src="../../wp-content/uploads/2014/01/Mistakes-700x465.jpg" alt="" width="490" height="326" /></a></p>
+<p dir="ltr">Unfortunately, this is a BIG mistake and a reason for <a href="../../why-your-customer-acquisition-funnel-isnt-working/index.html">why customer acquisition is too expensive</a> for many marketers.  For some traffic sources, such as search or paid search, your homepage visitors are actively looking for your solution and are ready to start your free package.  But other traffic sources, such as display ads, have little to no purchase intent.&hellip; <a href="../../what-are-high-purchase-intent-channels/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5292" class="post-5292 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../your-weekly-roundup-of-online-advertising/index.html" title="Your Weekly Roundup of Online Advertising">Your Weekly Roundup of Online Advertising</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>Your weekly roundup of online advertising posts brought to you by the LaunchBit B2B Advertising Network has arrived. See what the buzz is all about for 2014!</p>
+<p>&nbsp;</p>
+<p><a href="http://www.forbes.com/sites/drewhendricks/2013/11/22/will-2014-be-an-seo-or-ppc-year-for-marketers/">Will 2014 be an SEO or PPC year for Marketers?</a></p>
+<p><a href="../../wp-content/uploads/2014/01/death-of-seo.jpg"><img class=" wp-image-5293 alignleft" title="death of seo" src="../../wp-content/uploads/2014/01/death-of-seo-250x181.jpg" alt="" width="162" height="118" /></a>In the battle for marketing dollars, many businesses are torn between search engine optimization (SEO) and pay-per-click (PPC) advertising. In 2013, the tide seemed to turn toward PPC as concerns about the <a href="http://www.forbes.com/sites/womensmedia/2013/11/04/the-aftermath-of-seos-death-this-summer/">death of SEO</a> promoted businesses to slow down their SEO spending.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.forbes.com/sites/drewhendricks/2013/11/22/will-2014-be-an-seo-or-ppc-year-for-marketers/">Read the full article…</a></p>
+<p>&nbsp;</p>
+<p><a href="http://www.practicalecommerce.com/articles/62676-3-Tactics-to-Reassess-Paid-Search-in-2014">3 Tactics to Reassess Paid Search in 2014</a></p>
+<p><a href="../../wp-content/uploads/2014/01/3-tactics-to-reassess.jpg"><img class="alignleft  wp-image-5294" title="3 tactics to reassess" src="../../wp-content/uploads/2014/01/3-tactics-to-reassess-250x186.jpg" alt="" width="182" height="135" /></a>I’ve mentioned Facebook and Twitter remarketing, but audience targeting through social platforms will be imperative for companies’ brand growth.&hellip; <a href="../../your-weekly-roundup-of-online-advertising/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5309" class="post-5309 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../why-your-customer-acquisition-funnel-isnt-working/index.html" title="Why your customer acquisition funnel isn’t working">Why your customer acquisition funnel isn’t working</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth Yin</p>
+<p>One of the biggest mistakes SaaS marketers make is in trying to develop just one funnel for all customer acquisition channels.  By funnel, I mean something like this:</p>
+<p style="text-align: center;"><a href="../../wp-content/uploads/2014/01/Funnel-homepage1.png"><img class="size-full wp-image-5311 aligncenter" title="Funnel homepage" src="../../wp-content/uploads/2014/01/Funnel-homepage1.png" alt="" width="480" height="360" /></a></p>
+<p dir="ltr">This may work for high purchase-intent traffic coming to your site.  But, it won’t work for all, because not all traffic you send to your homepage will have a high purchase-intent.</p>
+<p dir="ltr"><strong>Silver bullets don’t exist.  Use lots of lead bullets.</strong></p>
+<p dir="ltr">Most marketers love SEM and SEO traffic, because they have a high level of purchase intent.  Prospects who are already actively searching for a solution like yours are ready to buy immediately.&hellip; <a href="../../why-your-customer-acquisition-funnel-isnt-working/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5304" class="post-5304 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../saas-companies-are-you-segmenting-your-customer-acquisition-channels-correctly/index.html" title="SaaS companies, are you segmenting your customer acquisition channels correctly?">SaaS companies, are you segmenting your customer acquisition channels correctly?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth Yin</p>
+<p>If you’re like most SaaS marketers, you’re always trying to lower your customer acquisition costs.  But, SaaS marketing, unlike consumer marketing, is <a href="http://andrewchen.co/2012/10/12/saas-products-arent-viral/">rarely viral</a>.  So, there’s no silver bullet &#8212; just a lot of lead bullets in SaaS marketing.</p>
+<p dir="ltr">This means there are TONS of customer acquisition channels for you to keep track of. Cohort analysis is a way to analyze segments your traffic &#8212; specific subgroups of potential customers.  But this isn’t easy.  So we’re partnering with our friends at KISSmetrics, who are pros at cohort analysis, to offer a webinar on how to juggle multiple customer acquisition channels and more accurately measure performance.&hellip; <a href="../../saas-companies-are-you-segmenting-your-customer-acquisition-channels-correctly/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5285" class="post-5285 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../how-to-quickly-and-easily-take-out-pay-per-click-campaigns/index.html" title="How to quickly and easily take out pay-per-click campaigns">How to quickly and easily take out pay-per-click campaigns</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p dir="ltr">Enhancing your customer experience is an ongoing process. You have to listen to your customers and adjust. Here at LaunchBit, our customers have been demanding a better user interface for a while. So, today, we are announcing a new user interface that allows B2B advertisers to quickly and easily take out pay-per-click campaigns.</p>
+<p><a href="../../../new-campaign/index.html"><img class="alignnone size-full wp-image-5286" title="new interface" src="../../wp-content/uploads/2014/01/new-interface.jpg" alt="" /></a></p>
+<p>In response to customer inquiries about ad placement, reach possibilities, and channel performance, we’ve added an ad simulator that we believe is a step forward in helping B2B advertisers understand how their campaigns work.</p>
+<p dir="ltr">The improved user experience includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Enhanced flow &#8211; Our new accordion-style interface allows users to see each step in taking out an ad before starting a campaign.</p></li>&hellip; <a href="../../how-to-quickly-and-easily-take-out-pay-per-click-campaigns/index.html" class="read_more">Read the rest</a></ul></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5278" class="post-5278 post type-post status-publish format-standard hentry category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../here-are-some-b2b-display-advertising-insights-to-keep-you-warm-over-the-holidays/index.html" title="Here are some B2B display advertising insights to keep you warm over the holidays">Here are some B2B display advertising insights to keep you warm over the holidays</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>B2B marketers and advertisers seek to gain brand awareness, lead generation, customer acquisition and loyalty, website traffic, and sales through their B2B display advertisements.  The savviest of marketers know that you can&#8217;t predict where the industry is going unless you know where it&#8217;s been. They also know that decisions based on industry data are key to experiencing bigger gains. So what are the best strategies they should use to distribute their ads, and which tactics, platforms, and trends are garnering the highest returns to justify that increase in spending?</p>
+<p><a href="../../wp-content/uploads/2013/12/B2B-Holidays-from-LaunchBit.png"><img class="alignnone size-full wp-image-5279" title="B2B Holidays from LaunchBit" src="../../wp-content/uploads/2013/12/B2B-Holidays-from-LaunchBit.png" alt="" /></a>&hellip; <a href="../../here-are-some-b2b-display-advertising-insights-to-keep-you-warm-over-the-holidays/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+
+			<!-- Pagination -->
+			<nav id="pagination">
+				<a class="prev page-numbers" href="../5/index.html">&laquo; Previous</a>
+<a class='page-numbers' href='../1/index.html'>1</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='../4/index.html'>4</a>
+<a class='page-numbers' href='../5/index.html'>5</a>
+<span class='page-numbers current'>6</span>
+<a class='page-numbers' href='../7/index.html'>7</a>
+<a class='page-numbers' href='../8/index.html'>8</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='../19/index.html'>19</a>
+<a class="next page-numbers" href="../7/index.html">Next &raquo;</a>			</nav>
+			<!-- /Pagination -->
+
+		</div>
+
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGA9YBgNI","queueTime":0,"applicationTime":144,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/page/6/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:13:09 GMT -->
+</html>

@@ -1,0 +1,317 @@
+
+/*********************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+#lbg-widget h1, #lbg-widget p,
+#lbg-widget fieldset, #lbg-widget form, #lbg-widget label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/*********************************************/
+
+.lbg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999899 !important;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#lbg-widget{
+	background-color: rgb(1, 148, 190);
+	width:100%;
+	padding-top:10px;
+	padding-bottom: 70px;
+	font-family:inherit;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index:9999999 !important;
+	
+		-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	
+	color:rgb(255, 255, 255);
+	line-height: 1.42857143;
+}
+
+#lbg-widget *{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+
+#lbg-container {
+	margin-top: 60px;
+  padding: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  #lbg-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #lbg-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #lbg-container {
+    width: 1002px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lbg-content{
+    float: left;
+	width: 50%
+  }
+  .lbg-content.lbg-form{
+	width:40%;
+	margin-left:5%;
+  }
+}
+
+.lbg-container:before,
+.lbg-container:after,
+.lbg-container-fluid:before,
+.lbg-container-fluid:after,
+.lbg-form-horizontal .lbg-form-group:before,
+.lbg-form-horizontal .lbg-form-group:after {
+  display: table;
+  content: " ";
+}
+
+.lbg-container:after,
+.lbg-container-fluid:after,
+.lbg-form-horizontal .lbg-form-group:after {
+  clear: both;
+}
+
+/* Image
+================================ */
+.lbg-img{
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.lbg-img img{
+		width:343px;
+		height:219px;
+	}
+}
+@media (min-width: 992px) {
+	.lbg-img img{
+		width:454px;
+		height: 290px;
+	}
+}
+
+@media (min-width: 1200px) {
+  .lbg-img img{
+    width: 470px;
+    height: 300px;
+  }
+}
+
+/* Typography
+================================ */
+.lbg-text{
+	margin-bottom: 20px;
+}
+
+#lbg-widget h1{
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	font-weight: bold;
+	line-height: 1.2;
+	text-shadow: none;
+	text-align:left;
+	width:auto;
+}
+
+#lbg-widget p{
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	line-height: 1.42857143;
+	text-align:left;
+	width:auto;
+}
+
+#lbg-widget a{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-decoration: underline;
+	float: right;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+	border-bottom: 0px;
+}
+
+#lbg-widget a:hover{
+	text-decoration: none;
+	background-color: transparent;
+}
+
+#lbg-widget p.lbg-credit{
+	text-align: right;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	margin-right: 5px;
+}
+
+#lbg-widget form{
+	margin-top: 20px;
+}
+
+#lbg-widget button{
+	float: right;
+	margin-bottom:15px;
+}
+
+#lbg-widget .error{
+	border-color: #a94442;
+	background-color:#f2dfde;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+         	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+#lbg-widget .error:focus{
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+/* Form
+================================ */
+
+#lbg-widget label, .lbg-col-md-4, .lbg-content {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+
+@media (min-width: 992px) {
+  .lbg-col-md-2, .lbg-col-md-4{
+    float: left;
+  }
+  .lbg-col-md-4 {
+    width: 67%;
+  }
+  .lbg-col-md-2{
+	width: 33%;
+  }
+}
+
+.lbg-widget form{
+	margin-top: 10px;
+}
+#lbg-widget fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#lbg-widget label {
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+input.lbg-form-control,
+input[type="text"].lbg-form-control,
+input[type="password"].lbg-form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  margin:0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height:auto;
+}
+.lbg-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.lbg-form-horizontal .lbg-form-group {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.lbg-form-group {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .lbg-form-horizontal .lbg-control-label {
+    text-align: right;
+  }
+}
+
+/* Form Button
+================================ */
+#lbg-form button, .lbg-btn, .lbg-btn:hover {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .lbg-hidden-xs {
+    display: none !important;
+  }
+}

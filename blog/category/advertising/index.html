@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/category/advertising/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>advertising Archives - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<link rel="next" href="page/2/index.html" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; advertising Category Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../../../d3v9r9uda02hel.cloudfront.net/production/static/widgets.js?ver=1.00'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="archive category category-advertising category-83 custom-background">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+		<div class="main">
+
+			<div class="section"><h2>Categories for<ul class="post-categories">
+	<li><a href="index.html" title="View all posts in advertising" rel="tag">advertising</a></li>
+	<li><a href="../marketing/index.html" title="View all posts in marketing" rel="tag">marketing</a></li></ul></h2></div>
+
+			
+	<!-- Article -->
+	
+	<article id="post-5946" class="post-5946 post type-post status-publish format-standard hentry category-advertising category-marketing" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../three-ways-to-reach-hyper-targeted-business-audiences-using-facebook/index.html" title="3 ways to reach hyper-targeted business audiences using Facebook">3 ways to reach hyper-targeted business audiences using Facebook</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+							
+				<div class="catribbon"><span>advertising</span></div>
+
+				<a href="../../three-ways-to-reach-hyper-targeted-business-audiences-using-facebook/index.html" title="3 ways to reach hyper-targeted business audiences using Facebook" class="thumbnail post_thumbnail" >
+					<img src="../../wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-1.18.02-PM.png" class="attachment-post-thumbnail wp-post-image" alt="Hyper-targeted audiences" title="Hyper-targeted audiences" />				</a>
+
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p><a href="../../wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-1.18.02-PM.png"><img class="aligncenter size-full wp-image-5964" title="Hyper-targeted audiences" src="../../wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-1.18.02-PM.png" alt="" /></a></p>
+<p>Facebook ads have gone through massive transitions over the years. In the beginning, the targeting capabilities were very simple: select demographic options and get your campaign in front of people who met those demographics. The problem with this was that you didn&#8217;t have the ability to go granular in your campaign. If you wanted to reach small business owners, they put your ad in front of EVERYONE who was even remotely involved with a small business. But what if you just wanted to reach say small business owners who were Constant Contact users? There wasn&#8217;t a way to get that granular.&hellip; <a href="../../three-ways-to-reach-hyper-targeted-business-audiences-using-facebook/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5772" class="post-5772 post type-post status-publish format-standard hentry category-advertising category-lead-generation category-marketing category-online-advertising category-top-stories" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../this-weeks-top-stories-in-online-advertising-6/index.html" title="This Week&#8217;s Top Stories in Online Advertising">This Week&#8217;s Top Stories in Online Advertising</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>You want the latest and greatest about what&#8217;s happening in the online advertising world? Well, look no further.</p>
+<p>&nbsp;</p>
+<h1>Who Should Use Pay-Per-Click Advertising and Who Shouldn&#8217;t</h1>
+<p><a href="../../wp-content/uploads/2014/03/roundup-click.jpg"><img class="alignnone size-full wp-image-5773" title="Click" src="../../wp-content/uploads/2014/03/roundup-click.jpg" alt="" /></a></p>
+<p><strong></strong>Chances are, you&#8217;ve heard about the amazing return on investment that can be had with pay-per-click (PPC) advertising. A return of 300 percent or even higher isn&#8217;t at all unusual with this form of advertising. <a href="http://www.entrepreneur.com/article/231667#">Read more&#8230;</a></p>
+<p>&nbsp;</p>
+<h1>Inventor of World Wide Web Criticizes Online Advertising</h1>
+<p><a href="../../wp-content/uploads/2014/03/roundup-www.jpg"><img class="alignnone size-full wp-image-5774" title="roundup www" src="../../wp-content/uploads/2014/03/roundup-www.jpg" alt="" /></a></p>
+<p>Tim Berners-Lee, inventor of the World Wide Web, has little positive to say about advertisers who dress their online ads up to look like content.He also slammed Microsoft&#8217;s practice of attaching ads to emails sent by users of its Hotmail service, saying that it &#8220;either perverts or distorts the message.&#8221;  <a href="http://www.marketingmagazine.co.uk/article/1284697/tim-berners-lee-criticises-online-advertising---archive-web25">Read more&#8230;</a></p>
+<p>&nbsp;</p>
+<h1>Twitter Tests Click-to-Call Button in Sponsored Ads</h1>
+<p><a href="../../wp-content/uploads/2014/03/roundup-twitt.jpg"><img class="alignnone size-full wp-image-5775" title="roundup twitt" src="../../wp-content/uploads/2014/03/roundup-twitt.jpg" alt="" /></a></p>
+<p>San Francisco-based company’s ad rates droppe<span style="text-decoration: underline;">d</span> in the final three months of last year, marking the seventh straight quarter of such declines. Twitter is actually pulling in an increasing amount of revenue from ads because more users are engaging with them by clicking on links, or by retweeting or favoriting them. <a href="http://www.digitaltrends.com/mobile/twitter-tests-click-to-call-button-in-sponsored-ads/#!zrMMQ">Read more…</a></p>
+<p>&nbsp;</p>
+<div>&hellip; <a href="../../this-weeks-top-stories-in-online-advertising-6/index.html" class="read_more">Read the rest</a></div></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5629" class="post-5629 post type-post status-publish format-standard hentry category-advertising category-blogs category-email-marketing category-lead-generation category-marketing category-uncategorized category-updates" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../this-weeks-top-stories-in-online-advertising-3/index.html" title="This Week&#8217;s Top Stories in Online Advertising">This Week&#8217;s Top Stories in Online Advertising</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>So, each week LaunchBit scours the web to find some of the top online advertising posts and news articles, just for you. Keep scrolling and check out what we&#8217;ve rounded up this week.</p>
+<p>&nbsp;</p>
+<h1>Watching Olympics Online? Here&#8217;s Why You See the Same Ads Over and Over</h1>
+<p><a href="../../wp-content/uploads/2014/02/roundup-olympics.jpg"><img class="alignnone  wp-image-5631" title="roundup olympics" src="../../wp-content/uploads/2014/02/roundup-olympics.jpg" alt="" width="437" height="292" /></a></p>
+<p><strong></strong>This inability to barrage online audiences effectively with marketing during sports broadcasts feels almost un-American. It’s a baffling breakdown in the capitalist order, given the extreme enthusiasm the media and technology industries have shown for digital video ads. <a href="http://www.businessweek.com/articles/2014-02-12/watching-olympics-online-heres-why-you-see-the-same-ads-over-and-over">Read more&#8230;</a></p>
+<p>&nbsp;</p>
+<h1>Ready for Hillary Spends $1 Million in Online Advertising</h1>
+<p><a href="../../wp-content/uploads/2014/02/roundup-hillary.jpg"><img class="alignnone  wp-image-5632" title="roundup hillary" src="../../wp-content/uploads/2014/02/roundup-hillary.jpg" alt="" width="460" height="271" /></a></p>
+<p>The super PAC Ready for Hillary is spending heavily on online advertising to reach out and sign up volunteers and donors. <strong>Ready for Hillary</strong>, a Democratic-oriented super PAC, that is encouraging a 2016 presidential run by former Sen.&hellip; <a href="../../this-weeks-top-stories-in-online-advertising-3/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5602" class="post-5602 post type-post status-publish format-standard hentry category-advertising category-blogs category-business category-email-marketing category-lead-generation category-uncategorized" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../why-headlines-are-the-most-important-landing-page-element-to-split-test/index.html" title="Why headlines are the most important landing page element to split test">Why headlines are the most important landing page element to split test</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p dir="ltr">This is a follow-up to a<a href="../../how-much-traffic-do-you-need-to-justify-split-testing-your-landing-pages/index.html"> previous post</a>. So, if you decide to read further it means you’ve determined that you have enough visitors on your landing pages to justify your time split testing.</p>
+<p dir="ltr"><a href="../../wp-content/uploads/2014/02/jump1.jpg"><img class="alignnone size-full wp-image-5603" title="jump" src="../../wp-content/uploads/2014/02/jump1.jpg" alt="" /></a></p>
+<p dir="ltr"><em>Image credit: personal-development-is-fun.com</em></p>
+<p>&nbsp;</p>
+<p>So you’ve decided to take the leap and think split testing is worth your time. Ok, so where do you start?</p>
+<p dir="ltr"><strong>We all know what to split test</strong></p>
+<p>Of course, you want to split test whatever will guide your traffic to your call-to-action. Most marketers like to make adjustments to the most important elements – like form length, headline, and call-to-action – because they have the most impact on whether your traffic will convert or not.&hellip; <a href="../../why-headlines-are-the-most-important-landing-page-element-to-split-test/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5488" class="post-5488 post type-post status-publish format-standard hentry category-advertising category-blogs category-business category-email-marketing category-lead-generation category-marketing category-uncategorized category-updates" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../how-much-traffic-do-you-need-to-justify-split-testing-your-landing-pages/index.html" title="How much traffic do you need to justify split testing your landing pages?">How much traffic do you need to justify split testing your landing pages?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p dir="ltr">So you&#8217;ve created a beautiful landing page, your call to action fits your purpose, and you&#8217;ve published it to the masses. You’re feeling relieved as you wait for the results to come back in hopes that you’ll be able to pat yourself on the back later. And then, your relief quickly turns to disappointment when you notice that you’re not converting as much traffic as you’d anticipated and you’re left staring at your mediocre results wondering what went wrong.</p>
+<p><a href="../../wp-content/uploads/2014/02/dumb.jpg"><img class="alignnone  wp-image-5599" title="dumb" src="../../wp-content/uploads/2014/02/dumb-700x465.jpg" alt="" width="630" height="419" /></a></p>
+<p><em>Image credit: b2bsecrets.com</em></p>
+<p dir="ltr">This scenario happens quite often and leaves a lot of b2b marketers with a decision to make. To split test or not to split test.&hellip; <a href="../../how-much-traffic-do-you-need-to-justify-split-testing-your-landing-pages/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5200" class="post-5200 post type-post status-publish format-standard hentry category-advertising" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../data-insights-tuesday-what-is-a-good-click-through-rate-for-b2b-ads/index.html" title="Data Insights Tuesday: What is a good click-through-rate for B2B ads?">Data Insights Tuesday: What is a good click-through-rate for B2B ads?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p><img class="alignnone" src="../../../../farm1.staticflickr.com/61/154349208_0783476ca7.jpg" alt="" width="500" height="333" /></p>
+<p><em>image credit: <a href="http://www.flickr.com/photos/ari/154349208/sizes/m/in/photolist-eD5Df-mqxFy-p5rBz-psrJ6-wkuJy-DXrD6-FVxcj-MKEFW-2ASs9e-2GS8jy-2KJoCM-3fjJiX-4cU6FC-4eZ2it-4idq28-4mCEvv-4vRoNY-4yR162-4Fgn9x-4HEazV-4PoxiV-4VhNL9-4YFiYs-56eMkw-59AGe1-59W7C7-5pTKAg-5rbZQZ-5sKeWy-5EsUZV-5GQ66s-5VPVtH-5Zqic6-68SwuY-6pwHxX-6pLZoZ-6yJwVo-6zxAWL-6ExJoQ-6FCGSz-6KqskA-6MUA3e-6MUAjZ-6PHst6-6SgV8g-6SkZUy-6TdnMj-6Tpxo4-6Ttyo7-6VEsEu-6Xyy2z/">Steve Rhodes</a></em></p>
+<p>A lot of B2B advertisers ask us what a good click-through-rate is for their ads. In fact, about <a href="../../../infographic/b2b-insights/index.html">30% of B2B marketers judge the performance of their ad campaigns by their click-through-rate</a>.  However, measuring whether the click-through-rate of your ad campaign is &#8220;good&#8221; or &#8220;bad&#8221; is complicated and sometimes impossible.</p>
+<p><strong>What causes high click-through-rates?</strong></p>
+<p>Let&#8217;s dissect what makes for a good click-through-rate: ad positioning, targeting &amp; context, creative &amp; copy, and ad format.</p>
+<p><strong>1) Ad positioning</strong></p>
+<p>This is the placement of the ad. On a website, banner ads are typically placed on the right side of the page.&hellip; <a href="../../data-insights-tuesday-what-is-a-good-click-through-rate-for-b2b-ads/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5192" class="post-5192 post type-post status-publish format-standard hentry category-advertising" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../moronic-monday-how-do-i-make-my-b2b-advertising-a-money-machine/index.html" title="Moronic Monday: How do I make my B2B Advertising a Money Machine?">Moronic Monday: How do I make my B2B Advertising a Money Machine?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p style="text-align: left;" align="center"><span>I spoke with a marketer this week and he told me that he hated B2B display advertising with a passion. This type of advertising made him so angry that I could hear him bursting a spleen on the phone. I wanted to reach out and give my friend the biggest hug because no one deserves to feel that way about what essentially is the Internet Advertisers Money Making Machine! If you know how to test your B2B Advertising campaigns, you’ll create a money making machine for your company where no advertising channel will ever stress you out. Here are my three easy steps that I want to sum up from our upcoming White Paper: </span><a style="font-size: 13px;" href="../../../case-studies/test-budget/index.html"><em>“How to run a Test Trial of New B2B Distribution Channels”</em></a><span style="font-size: 13px;"> by our CEO, Elizabeth Yin.</span>&hellip; <a href="../../moronic-monday-how-do-i-make-my-b2b-advertising-a-money-machine/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5149" class="post-5149 post type-post status-publish format-standard hentry category-advertising" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../data-insights-tuesday-what-days-do-b2b-marketers-start-their-ppc-campaigns/index.html" title="Data Insights Tuesday: What day(s) do B2B marketers start their PPC campaigns?">Data Insights Tuesday: What day(s) do B2B marketers start their PPC campaigns?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>By Elizabeth</p>
+<p><img class="alignnone" src="../../../../farm1.staticflickr.com/124/366190064_8114b4e55d.jpg" alt="" width="500" height="375" /></p>
+<p><em>image credit: <a href="http://www.flickr.com/photos/joelanman/366190064/sizes/m/in/photolist-ymPxN-ymQeG-ztku6-2e69Di-36tXYr-3msuAB-436t7C-47AsQX-49GTyg-4h1oE5-4iCZgQ-4wD4af-4LSbLu-4LYY7a-4VKtGW-51e2aM-52bbqE-5nkNRB-5qJkcU-5r2wbo-5DenZQ-5F1n26-5KDQFB-5NmQya-5Nobj3-5NAjmk-5NAjwV-5NEAjs-5PQBiZ-5PUQrL-5U7uqn-5VLLjE-5VN2gs-5Xeyhr-67gyg5-6vQdPS-6Cu8o5-6PQjEQ-6RhBnK-738CU7-77ytmc-7874Go-7hZ7KB-7i41vo-7jFn6k-7jKg1u-7kbiCt-7kfcJQ-7mW3gT-7mZWA9-7nvVEx/">Joe Lanman</a></em></p>
+<p>I was chatting with my co-worker about what days of the week B2B marketers prefer to take out ad campaigns. He argued that most B2B marketers prefer to take out ads Monday &#8211; Wednesday.  Afterall, enterprise software previously required high touch sales, and sales teams and decision makers don&#8217;t like to work the weekends. I argued that with the rise in <a href="http://www.gartner.com/newsroom/id/1963815">Saas dominating the B2B market and growing at nearly 20% YOY</a>, B2B companies are able to acquire customers with less high-touch sales. So, software users can start free trials right away without a credit card &#8212; even on the weekend.&hellip; <a href="../../data-insights-tuesday-what-days-do-b2b-marketers-start-their-ppc-campaigns/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5134" class="post-5134 post type-post status-publish format-standard hentry category-advertising category-updates" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../moronic-monday-why-is-launchbit-giving-away-10000-in-b2b-advertising-inventory-in-december/index.html" title="Moronic Monday: Why is LaunchBit giving away $10,000 in B2B Advertising Inventory in December?">Moronic Monday: Why is LaunchBit giving away $10,000 in B2B Advertising Inventory in December?</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/lee/index.html" title="Published by Lee Constantine">Lee Constantine</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>The LaunchBit team wants to change the face of B2B Advertising this December! Therefore, starting today, December 2nd email advertising inventory on the line for our best B2B marketing prospects. If you are a B2B marketer with quality advertising creatives and killer offers, we are offering you the opportunity to gain access to our <del>$10,000</del> $8,000 giveaway of free B2B advertising. Here are three reasons and why you should take notice and apply for our giveaway today. Click the button below and see if you qualify.</p>
+<p><a href="http://advertisers.launchbit.com/10k-offer/"><strong><img class="aligncenter size-full wp-image-5139" title="Button" src="../../wp-content/uploads/2013/12/Button1.jpg" alt="" /></strong></a></p>
+<p><strong>1. Your competition just ran out of B2B Advertising budget</strong></p>
+<p>While speaking with B2B marketers in November, we heard that quite a few of them have run out of marketing budget for 2013 or have their entire remaining budget already assigned.&hellip; <a href="../../moronic-monday-why-is-launchbit-giving-away-10000-in-b2b-advertising-inventory-in-december/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+	<!-- Article -->
+	
+	<article id="post-5121" class="post-5121 post type-post status-publish format-standard hentry category-advertising" >
+
+		<div class="inner">
+
+			<p><small>&nbsp;</small></p><!-- Space between title and top bar and separator lines-->
+
+			<!-- Post Title -->
+			<h2>
+				<a href="../../how-to-test-a-range-of-ad-creatives/index.html" title="How to test a range of ad creatives">How to test a range of ad creatives</a>
+			</h2>
+			<!-- /Post Title -->
+
+			<!-- Post Details -->
+			<ul class="post_details">
+				<li class="posted_by"><span class="postit">Published by <span class="author vcard"><a class="url fn n" href="../../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></span></li>
+			</ul>
+			<!-- /Post Details -->
+
+			<!-- Post Thumbnail -->
+						<!-- /Post Thumbnail -->			
+		
+			<p class="excerpt"><p>I discussed on Tuesday the importance of <a href="../../data-insights-tuesday-how-much-should-your-test-bid-be-in-a-ppc-ad-network/index.html">changing your ad creatives in order to get the best PPC prices</a>.  But, how many creatives is enough to test?</p>
+<p>This is actually a huge hangup for most advertisers I meet. Most marketers are too busy managing tons of different activities &#8212; no one has time to come up with a lot of creatives only to test a channel briefly and then scrap it all together. Here are 2 rules for testing a range of creatives.</p>
+<p><a href="../../wp-content/uploads/2013/11/tester.jpg"><img class="alignnone size-full wp-image-5126" title="Lab assistant works with laptop" src="../../wp-content/uploads/2013/11/tester.jpg" alt="" /></a></p>
+<p><em>Image credit: Digitalmarketer.com</em></p>
+<p><strong>1) Use a handful of offers</strong></p>
+<p>It&#8217;s worth your while to come up with a handful of offers that you can use to test every new paid marketing channel.&hellip; <a href="../../how-to-test-a-range-of-ad-creatives/index.html" class="read_more">Read the rest</a></p></p>
+			
+		</div>
+
+	</article>
+	<!-- /Article -->
+
+
+
+			<!-- Pagination -->
+			<nav id="pagination">
+				<span class='page-numbers current'>1</span>
+<a class='page-numbers' href='page/2/index.html'>2</a>
+<a class='page-numbers' href='page/3/index.html'>3</a>
+<a class="next page-numbers" href="page/2/index.html">Next &raquo;</a>			</nav>
+			<!-- /Pagination -->
+
+		</div>
+
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGAVXFgNXVxQf","queueTime":0,"applicationTime":152,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/category/advertising/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:30:26 GMT -->
+</html>

@@ -1,0 +1,68 @@
+.jumbotron#campaign{
+	padding-bottom: 20px;
+}
+.edit {
+    display: none;
+}
+
+.panel-static{
+	margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+/* Parameters */
+.value{
+	font-size: 1.1em;
+}
+
+.campaign_name{
+	margin-top: 0px;
+}
+
+/* Sample Table in PPC section of New Campaign*/
+#PPC-sample{
+	margin-top: 20px;
+}
+
+#PPC-sample a{
+	color: #666;
+}
+
+#PPC-sample a:hover{
+	color:#333;
+}
+
+
+/* Creatives of New Campaign*/
+.ad{
+	display:table-cell;
+	text-align: center; 
+	vertical-align: middle;
+}
+
+#bsa_creatives{
+	margin-top: 20px;
+}
+
+/* Networks of New Campaign */
+.network-details img{
+	margin-right:20px;
+}
+
+.network-details p{
+	margin-top: 10px;
+}
+
+.well h3{
+	margin-top: 0px;
+}
+
+#chart_div{
+	border: 1px solid #e1e1e1;
+	border-radius: 2px;
+	padding: 5px;
+}

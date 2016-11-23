@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html  xmlns:fb="https://www.facebook.com/2008/fbml"  xmlns:og="http://ogp.me/ns#" dir="ltr" lang="en-US" class="no-js"><![endif]--> 
+
+<!-- Mirrored from www.launchbit.com/blog/customer-research-writing-interview-questions/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:26:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>Customer research: writing interview questions - LaunchBit : LaunchBit</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="pingback" href="../xmlrpc.php" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="../feed/rss/index.html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../feed/atom/index.html" />
+		<link rel="shortcut icon"  href="#">
+	<link rel="apple-touch-icon" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../wp-content/themes/Spritz/spritz/apple-touch-icon-ipad3.png" />
+	<!-- CSS + jQuery + JavaScript -->
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@launchbit"/>
+<meta name="twitter:domain" content="LaunchBit"/>
+<meta name="twitter:creator" content="@launchbit"/>
+<meta name="twitter:description" content="By Elizabeth
+When we interview people, we&#8217;ll ask two sets of questions: 1) about routine, habit, and usage and 2) about our product idea/mocks/demo.
+For us at LaunchBit, in the beginning of doing pure research, we usually like to ask more behaviorial questions (70-80% of the interview) and fewer questions about our specific idea (20-30%).  Just like other entrepreneurs, a specific product idea will drive us to find potential customers to interview.  However, we&#8217;ll usually discover in our interviews that while a close opportunity exists, our initial product idea doesn&#8217;t quite address the opportunity well.  So, then we&#8217;ll really focus on trying to understand a particular pain point and then iterate our product idea to address that need.&hellip; Read the rest"/>
+<meta name="twitter:title" content="Customer research: writing interview questions - LaunchBit"/>
+<meta name="twitter:url" content="http://www.launchbit.com/blog/customer-research-writing-interview-questions/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="LaunchBit &raquo; Customer research: writing interview questions Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='digg-digg-css'  href='../wp-content/plugins/digg-digg/css/diggdigg-style48f5.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/Spritz/spritz/css/bootstrap.min5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='spritz-css'  href='../wp-content/themes/Spritz/spritz/style4963.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lora_font-css'  href='http://fonts.googleapis.com/css?family=Lora%3A400%2C700&amp;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='open_sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&amp;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryba3a.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/modernizr61da.js?ver=2.6.2'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/selectnav.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/scripts8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/Spritz/spritz/js/bootstrap.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply5589.js?ver=3.4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.1" />
+<link rel='shortlink' href='../index1e7e.html?p=34' />
+      <!-- Open Graph Meta Tags for Facebook and LinkedIn Sharing !-->
+		<meta property="og:title" content="Customer research: writing interview questions"/>
+		<meta property="og:description" content="By Elizabeth
+When we interview people, we&#8217;ll ask two sets of questions: 1) about routine, habit, and usage and 2) about our product idea/mocks/demo.
+For us at LaunchBit, in the beginning of doing pure research, we usually like to ask more behaviorial questions (70-80% of the interview) and fewer questions about our specific idea (20-30%).  Just like other entrepreneurs, a specific product idea will drive us to find potential customers to interview.  However, we&#8217;ll usually discover in our interviews that while a close opportunity exists, our initial product idea doesn&#8217;t quite address the opportunity well.  So, then we&#8217;ll really focus on trying to understand a particular pain point and then iterate our product idea to address that need.&hellip; Read the rest" />
+		<meta property="og:url" content="http://www.launchbit.com/blog/customer-research-writing-interview-questions/"/>
+						<meta property="og:type" content="article"
+		/>
+		<meta property="og:site_name" content="LaunchBit"/>
+		<!-- End Open Graph Meta Tags !-->
+
+    <script src="http://load.sumome.com/" data-sumo-site-id="25fb3b8b93b224b9a9d0f0431dc7b600416f46fab02e0ca1e6de4a97359a0cc2" async></script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; background-image: url('../wp-content/themes/Spritz/spritz/img/body.gif'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31127242-1', 'launchbit.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="single single-post postid-34 single-format-standard custom-background customer-research-writing-interview-questions">
+
+	<!-- Header -->
+	<header class="head">
+
+		<!-- Wrapper -->
+		<div class="wrapper container">
+
+			<div class="row">
+								<div class="span8" >
+
+					<div class="inner">
+
+						<!-- Logo -->
+						<div id="logo">
+
+							<h1><a href="../../index.html" title="LaunchBit" style="display:inline">
+								<img src="../wp-content/uploads/2013/02/lb2.png" height="106" width="150" alt="LaunchBit"  style="display:inline" />
+							</a>
+							<a href="../../index.html" title="LaunchBit"  style="display:inline">LaunchBit</a></h1>
+
+						</div>
+						 <!--/Logo -->	
+
+						<!-- Nav -->
+						<nav>
+							<div class="ribbon">
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+											<div class="nav"><ul><li id="menu-item-4897" class="menu-item-4897"><a></a></li><li id="menu-item-4890" class="menu-item-4890"><a></a></li><li id="menu-item-4831" class="menu-item-4831"><a></a></li><li id="menu-item-4894" class="menu-item-4894"><a></a></li><li id="menu-item-4368" class="menu-item-4368"><a></a></li><li id="menu-item-6011" class="menu-item-6011"><a></a></li><li id="menu-item-4864" class="menu-item-4864"><a></a></li><li id="menu-item-5867" class="menu-item-5867"><a></a></li></ul></div>
+										</div>
+									</div>
+								</div> <!-- /navbar-->
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
+
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
+
+				
+				<div class="span4">
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Subscribe to our RSS" href="../feed.html">RSS</a></li>
+ 						<li class="facebook"><a title="Follow us with Facebook" href="https://www.facebook.com/LaunchBit">Facebook</a></li>
+ 						<li class="twitter"><a title="Follow us with Twitter" href="https://twitter.com/launchbit">Twitter</a></li>
+ 						<li class="newsletter"><a title="Subscribe to our Newsletter" href="http://launchbit.us5.list-manage.com/subscribe/post?u=3456528dadb5a20fba1f09213&amp;id=4231716ccd">Newsletter</a></li>
+ 					</ul>
+				</div>
+
+				
+			</div> <!-- /row -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
+
+	<!-- Wrapper -->
+	<div class="wrapper container">
+
+<div class="row">
+
+	<!-- Section -->
+	<section class="span8">
+
+	
+		<div class="main">
+
+			<!-- Article -->
+			<article id="post-34" class="post-34 post type-post status-publish format-standard hentry category-lead-generation tag-customer-development tag-interviewing-customers post_content">
+
+				<div class="inner">
+
+					<nav><ul class="breadcrumb"><li><a href="../../blog.html">Home</a> <span class="divider">/</span> </li><li><a href="../category/lead-generation/index.html" title="View all posts in lead generation">lead generation</a> <span class="divider">/</span> </li><li class="active">Customer research: writing interview questions</li></ul></nav>
+					<div class="prefix"></div>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="index.html" title="Customer research: writing interview questions">Customer research: writing interview questions</a>
+					</h1>
+					<!-- /Post Title -->
+
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by">Published by <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="Published by Elizabeth Yin">Elizabeth Yin</a></span> <span style="font-size:13px;">-- Get updates of new posts <a style="cursor:pointer;" onclick="document.getElementById('bylineleadbox').style.display='block';ga('send', 'event', 'leadbox', 'byline-impression');return false;">here</a></span></li>
+						<li class="comments"><a href="index.html#comments" title="Comment on Customer research: writing interview questions">4 Comments</a></li>
+					</ul>
+					<!-- /Post Details -->
+<!--
+<script type="text/javascript" src="http://www.launchbit.com/js-az/launchbit.js"></script><div class="launchbitaz" launchbit_id="9505"></div> -->
+
+					<a id="dd_start"></a><p>By Elizabeth</p>
+<p>When we interview people, we&#8217;ll ask two sets of questions: 1) about routine, habit, and usage and 2) about our product idea/mocks/demo.</p>
+<p>For us at LaunchBit, in the beginning of doing pure research, we usually like to ask more behaviorial questions (70-80% of the interview) and fewer questions about our specific idea (20-30%).  Just like other entrepreneurs, a specific product idea will drive us to find potential customers to interview.  However, we&#8217;ll usually discover in our interviews that while a close opportunity exists, our initial product idea doesn&#8217;t quite address the opportunity well.  So, then we&#8217;ll really focus on trying to understand a particular pain point and then iterate our product idea to address that need.  Once we better understand the problem and start to tweak our product mocks, we&#8217;ll allocate more time in our subsequent interviews to ask more product-related questions.</p>
+<p><strong>Learning about a customer&#8217;s existing behavior</strong></p>
+<p>Changing behavior is HARD and if it&#8217;s so radical, it can spell trouble for a startup. You&#8217;ll want to make sure the product you are thinking about doesn&#8217;t change user behavior too much.  If a user has to think about how to integrate your product into his/her life, then it&#8217;s problem that will require a lot of resources to address.</p>
+<p>The most ideal way to learn about user behavior is to observe your interviewee in action.  However, this usually isn&#8217;t possible, so your next best option is to just ask about how he/she lives his/her life, while also having a healthy dose of skepticism.  The user may have forgetten his/her routine or may not realize that what he/she does is different from what he/she says.  Let&#8217;s suppose we are exploring the idea of building an online exercise motivation tool called Naggy.  Once we&#8217;ve solidified the <a href="http://blog.launchbit.com/finding-customer-types">type of customers</a> we want to interview, we would ask these kinds of questions:</p>
+<ul>
+<li>How often do you currently work out?</li>
+<li>How frequently would you want to work out?</li>
+<li>What do you think are the blocking points in working out more?</li>
+<li>When you have worked out, what has been the impetus for exercising?</li>
+</ul>
+<p>Often, questions lead to more questions, and we&#8217;d ask those that come to mind.  By the end of this part of the interview, we&#8217;d want to have a clear idea of how this kind of person goes through a particular pain point or activity.  Usually we&#8217;ll need to interview a handful or two of this type of customer in order to start to see patterns of behavior and pain points.</p>
+<p><strong>Feedback on your product idea</strong></p>
+<p>In the beginning of doing research, we might just ask interviewees for their general feedback on our product mocks.  However, as we hone in more and more on a particular customer-type and a particular problem, we&#8217;ll iterate our mocks and will ask more questions about the mocks.  These include:</p>
+<ul>
+<li>What do you think about this product?</li>
+<li>What is missing?</li>
+<li>What feature do you like the most?</li>
+<li>What if we start removing this feature?  What about removing this feature?</li>
+<li>Would you use this product?</li>
+<li>How much would you expect this to cost?</li>
+<li>Would you refer this product to friends?  Why or why not?
+<ul>
+<li>If so, do you think you can introduce me to some of your friends who might find this useful?</li>
+</ul>
+</li>
+</ul>
+<p>The last question and sub-question are so key.  This will tell you if you are on the right track.  I your interviewee could really benefit from this product, he/she will often be able to refer like-minded people and will be excited to do so.</p>
+<p>Lastly, we&#8217;re not by any means experts on interviewing customers.  Most of what we share stems from our own learnings plus the advice of user experience experts whom we really admire.  For more best practices on interviewing customers, check out some of our favorite blogs:</p>
+<ul>
+<li><a href="http://www.cindyalvarez.com/">Cindy Alvarez</a></li>
+<li><a href="http://usersknow.blogspot.com/">Laura Klein</a></li>
+</ul>
+<p>If you have favorite user experience blogs, please let us know.</p>
+<p><span style="font-size: 12px; line-height: 21px; color: #424037;"><strong style="padding: 0px; margin: 0px;"><em style="padding: 0px; margin: 0px;">For more tips and resources on <a style="color: #bc7134; text-decoration: none; padding: 0px; margin: 0px;" href="../../index.html">starting a web business</a> without coding, visit LaunchBit.</em></strong></span></p>
+<div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.launchbit.com/blog/customer-research-writing-interview-questions/" data-count="vertical" data-text="Customer research: writing interview questions" data-via="Launchbit" ></a><script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-url="http://www.launchbit.com/blog/customer-research-writing-interview-questions/" data-via="Launchbit"></a><script type="text/javascript" src="../../../static.bufferapp.com/js/button.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><script src="../../../connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="index.html" send="false" show_faces="false"  layout="box_count" width="50"  ></fb:like></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='index.html'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='../../../platform.linkedin.com/in.js'></script><div class='dd-linkedin-share'><div data-url='http://www.launchbit.com/blog/customer-research-writing-interview-questions/' data-counter='top'></div></div></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 60;var dd_top_offset_from_content = 0;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="../wp-content/plugins/digg-digg/js/diggdigg-floating-bar48f5.js?ver=5.3.6"></script>					
+					
+<div id="newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+			<p><a href="https://twitter.com/launchbit" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">follow @dynamick</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+				<!-- Begin MailChimp Signup Form -->
+	<form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name" required>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name" required>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" required>
+        <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+                <input type="hidden" value="postfooter" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+    <script type="text/javascript">
+ga('send','event','leadbox','postfooter-impression');
+</script>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div>
+
+					
+						
+					
+					
+					<section id="comments">
+	
+	
+
+		
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-509625">
+			<article id="div-comment-509625" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/e2b301eec15f33d51e541bff0412e753?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Bobs</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-509625">
+			January 16, 2015 at 9:59 pm</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>I thuhgot finding this would be so arduous but it&#8217;s a breeze!</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexc87f.html?replytocom=509625#respond' onclick='return addComment.moveForm("div-comment-509625", "509625", "respond", "34")'>Reply</a>	</div>
+			</article>
+	</li>
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-786403">
+			<article id="div-comment-786403" class="comment-body">
+		<header>
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/0a894d68422aebc99827721778df4452?s=180&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D180&amp;r=G' class='avatar avatar-180 photo' height='180' width='180' />			<cite class="fn">Jesus Valdez</cite> <span class="says">says:</span>		</div>
+				<div class="comment-meta commentmetadata"><a href="index.html#comment-786403">
+			May 25, 2016 at 12:12 am</a>		</div>
+	</header>
+	<div class="comment-text">
+		<p>Hi Elizabeth, great Article, I learned a lot! but the more I learn the more I get questions.</p>
+<p>So I have an idea I want to validate, and I would like to check the pains and personas to focus on them, but I am not sure if I have to ask only behavioral questions or also I should show them the product (I have an app prototype) even if it’s in such an early stage. What do you recommend?</p>
+	</div>
+
+	<div class="reply">
+		<a class='comment-reply-link' href='indexdee3.html?replytocom=786403#respond' onclick='return addComment.moveForm("div-comment-786403", "786403", "respond", "34")'>Reply</a>	</div>
+			</article>
+	</li>
+	</ol>
+
+	
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://www.launchbit.com/blog/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' placeholder = "How could we call you?" required/></p>
+<p class="comment-form-email"><label for="email">Email<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required='true' placeholder="How could we contact you?" required /></p>
+
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="What do you want ask me?"	></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='34' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5bea08b85f" /></p><script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form6e0e.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="19"/></p>					</form>
+							</div><!-- #respond -->
+						
+</section> <!-- END: comments if not password protected -->
+				</div>
+			</article>
+			<!-- /Article -->
+
+		</div> <!-- </div class="main"> -->
+
+		
+		
+	</section>
+	<!-- /Section -->
+
+	<!-- Sidebar -->
+<aside id="sidebar" class="span4">
+	
+	<div class="sidebar">
+		<div class="sidebar-widget first">
+			<div id="text-3" class="widget_text">			<div class="textwidget"><div class="sidebar_newsletter">
+    <div class="white-border">
+        <div class="newsletter-wrap">
+            <h4>Newsletter</h4>
+            <p>Want to grow your B2B company?<br />Don't miss a post - sign up today.</p>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Blog Subscriber" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/thanks-for-subscribing/" name="redirect" class="">
+<input type="hidden" value="sidebar" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</div>
+    </div>
+</div>
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-impression');
+</script></div>
+		</div>		<div id="recent-posts-2" class="widget_recent_entries">		<h3  class="">Recent Posts</h3>		<ul>
+				<li><a href="../weve-acquired/index.html" title="We&#8217;ve been acquired!">We&#8217;ve been acquired!</a></li>
+				<li><a href="../how-i-got-250k-views-infographic-1-week/index.html" title="How I got 250k+ views on my infographic in 1 week">How I got 250k+ views on my infographic in 1 week</a></li>
+				<li><a href="../how-many-saas-companies-still-have-freemium-products/index.html" title="How many SaaS companies still have freemium products?">How many SaaS companies still have freemium products?</a></li>
+				<li><a href="../ideal-day-week-post-facebook/index.html" title="Is there an ideal day of the week to post to Facebook?">Is there an ideal day of the week to post to Facebook?</a></li>
+				<li><a href="../ideal-time-post-facebook/index.html" title="Is there an ideal time to post to Facebook?">Is there an ideal time to post to Facebook?</a></li>
+				<li><a href="../what-content-marketing-performs-best/index.html" title="What content marketing performs best?">What content marketing performs best?</a></li>
+				<li><a href="../how-can-small-blogs-generate-organic-email-leads/index.html" title="How can small blogs generate organic email leads?">How can small blogs generate organic email leads?</a></li>
+				<li><a href="../publishing-book-on-email-marketing/index.html" title="We&#8217;re publishing a book!">We&#8217;re publishing a book!</a></li>
+				<li><a href="../3-hacks-generate-leads-twitter-cards/index.html" title="3 Hacks to Generate More Leads with Twitter Cards">3 Hacks to Generate More Leads with Twitter Cards</a></li>
+				<li><a href="../how-we-build-data-driven-marketing-team-launchbit/index.html" title="How we build a data-driven marketing team at LaunchBit">How we build a data-driven marketing team at LaunchBit</a></li>
+				</ul>
+		</div><div class="white-boxed">
+<div id="boxedclasstext-2" class="widget_boxedclasstext"><div class="white-border">
+<center>
+      </br><h4 style="font-size:22px;" "font-weight:bold;"> We're publishing an eBook!</font></h4>
+            <p>Sign up for your FREE copy <br />of our Email Marketing ebook!</p> </br>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://www.launchbit.com/ad-manager/mailchimp-signup.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last name">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your email" class="btn btn-info" style="margin-top:10px">
+                <!-- marks as blog subscriber -->
+                <input type="hidden" value="Marketing eBook" name="group[11749][0]">
+                <input type="hidden" value="http://www.launchbit.com/blog/publishing-book-on-email-marketing/" name="redirect" class="">
+<input type="hidden" value="sidebar-leadbox" name="EXTRA" class="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3456528dadb5a20fba1f09213_9e85120e96" value=""></div>
+                <center><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info" style="margin-top:10px"></center>
+            </form>
+            <!--End mc_embed_signup-->			</center></div>
+
+
+<script type="text/javascript">
+ga('send','event','leadbox','sidebar-book-impression');
+</script></div></div>
+		</div>
+
+		<div class="sidebar-widget second">
+					</div>
+	</div>
+</aside>
+<!-- /Sidebar -->
+</div>
+
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<div id="text-5" class="widget_text">			<div class="textwidget"><div><p><a href="../../terms-of-service-advertisers/index.html">Terms of Service</a> | <a href="../../privacy/index.html">Privacy Policy</a></p></div>
+</div>
+		</div>				</div>
+				<div class="span3">
+									</div>
+				<div class="span3">
+					<div id="text-6" class="widget_text">			<div class="textwidget"><div class="sumomeborrowedpopup sumomeborrowedpopup-small" style="padding-top: 0px;display:none;" id="bylineleadbox"><div class="sumomeborrowedpopup-overlay"></div><div class="sumomeborrowedpopup-content" style="margin-top:150px;"><div class="textwidget"><div class="sidebar_newsletter">
+	<div class="white-border">
+		<div class="newsletter-wrap">
+			<h4>Newsletter</h4>
+			<p style="font-family:'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;color:#333;">Want to grow your B2B company?  Don't miss a post - sign up today.</p>
+				<!-- Begin MailChimp Signup Form -->
+	<form novalidate="" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://www.launchbit.com/ad-manager/mailchimp-signup.php">
+
+<input type="text" placeholder="First name" id="mce-FNAME" class="" name="FNAME" value="" style="padding:10px;height:40px;">
+
+<input type="text" placeholder="Last name" id="mce-LNAME" class="" name="LNAME" value="" style="padding:10px;height:40px;">
+		<input type="email" style="margin-top:10px;height:40px;" placeholder="Add your email" id="mce-EMAIL" class="email" name="EMAIL" value="">
+<!-- marks as blog subscriber -->
+                <input type="hidden" name="group[11749][0]" value="Blog Subscriber">
+                <input type="hidden" class="" name="redirect" value="../thanks-for-subscribing/index.html">
+<input type="hidden" class="" name="EXTRA" value="byline">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" value="" name="b_3456528dadb5a20fba1f09213_9e85120e96"></div>
+		<center><input type="submit" style="margin-top:10px" class="btn btn-info" id="mc-embedded-subscribe" name="subscribe" value="Subscribe"></center>
+	</form>
+	<!--End mc_embed_signup-->			</div>
+	</div>
+</div></div><div class="sumomeborrowedpopup-close" onclick="document.getElementById('bylineleadbox').style.display='none';"></div></div></div></div>
+		</div>				</div>
+				<div class="span12">
+
+					<!-- Copyright -->
+					<p class="copyright">
+						&copy; 2016 Copyright LaunchBit. 
+						
+					</p>
+					<!-- /Copyright -->
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- /Footer -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"51ad151466","applicationID":"1019877","transactionName":"Z10EMkpTWxBWBUILCV4XJwVMW1oNGBVfDAFcXQ==","queueTime":0,"applicationTime":126,"atts":"SxoHRAJJSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.launchbit.com/blog/customer-research-writing-interview-questions/ by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 23 Nov 2016 04:26:54 GMT -->
+</html>

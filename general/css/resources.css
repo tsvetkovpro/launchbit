@@ -1,0 +1,66 @@
+/* Jumbotron
+================================= */
+
+.jumbotron#resources{
+	background: url('../images/resources-bg1.jpg') no-repeat top left;
+	background-size: cover;
+	min-height:400px;
+}
+
+.jumbotron#resources h2{
+	color: white;
+}
+
+
+
+/* Section Specifics
+================================= */
+.resources-label{
+	text-align: right;
+	text-transform: uppercase;
+	font-size: .875em;
+	color:#666;
+}
+
+.casestudy{
+	padding:15px;
+	margin:0px 15px 5px;
+	background-color: white;
+	
+	-moz-box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+            
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.casestudy img{
+	margin-bottom: 10px;
+}
+.casestudy a p{
+    color: #0194BE;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.casestudy a:hover p{
+    color: #126980;
+    text-decoration: none;
+}
+
+.webinar{
+	margin-right: 15px;
+	border-top: 1px solid #efefef;
+	padding:30px 0px;
+}
+.webinar-block .webinar:first-child {
+	padding-top:0px;
+	margin-top: none;
+	border-top: 0px;
+}
+
+.webinar h4{
+	margin-top: 0px;
+}
